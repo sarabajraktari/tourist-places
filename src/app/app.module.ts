@@ -13,6 +13,9 @@ import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FooterComponent } from './footer/footer.component';
+import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
+
 
 
 
@@ -22,6 +25,7 @@ registerLocaleData(en);
   declarations: [
     AppComponent,
     HeaderComponent,
+    FooterComponent,
 
 
 
@@ -34,7 +38,9 @@ registerLocaleData(en);
     NzInputModule,
     NzButtonModule,
     NzIconModule,
-    NgbModule
+    NgbModule,
+    MdbCheckboxModule,
+
 
 
   ],
