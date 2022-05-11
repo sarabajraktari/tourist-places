@@ -15,6 +15,10 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
 import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
+import { HomeComponent } from './home/home.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { ContactComponent } from './contact/contact.component';
+
 
 
 
@@ -26,6 +30,9 @@ registerLocaleData(en);
     AppComponent,
     HeaderComponent,
     FooterComponent,
+    HomeComponent,
+    GalleryComponent,
+    ContactComponent,
 
 
 

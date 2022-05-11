@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 
 @Component({
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  @Output() featureSelected = new EventEmitter<string>();
   constructor() { }
 
   ngOnInit(): void {
@@ -20,5 +20,7 @@ export class HeaderComponent implements OnInit {
   toggleCollapsed(): void {
     this.isCollapsed = !this.isCollapsed;
   }
-
+  onSelect(feature: string) {
+    this.featureSelected.emit(feature)
+  }
 }

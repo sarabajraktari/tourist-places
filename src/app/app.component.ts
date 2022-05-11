@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tourist-places';
+
+  onSelectFeature = 'home';
+  onNavigate(feature: string) {
+    this.onSelectFeature = feature;
+  }
 }
+

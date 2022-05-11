@@ -1,3 +1,6 @@
-<app-header></app-header>
+<app-header (featureSelected)="onNavigate($event)"></app-header>
+<app-home *ngIf="onSelectFeature==='home'"></app-home>
+<app-gallery *ngIf="onSelectFeature ==='gallery'"></app-gallery>
+<app-contact *ngIf="onSelectFeature ==='contact'"></app-contact>
 <br><br><br>
 <app-footer></app-footer>
