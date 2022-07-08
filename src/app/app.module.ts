@@ -18,6 +18,7 @@ import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
 import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 
@@ -47,6 +48,7 @@ registerLocaleData(en);
     NzIconModule,
     NgbModule,
     MdbCheckboxModule,
+    AppRoutingModule
 
 
 

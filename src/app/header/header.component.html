@@ -1,5 +1,5 @@
-
-<nav class="navbar navbar-expand-md navbar-light navbar-custom fixed-top border-bottom ">
+<!--fixed-top -->
+<nav class="navbar navbar-expand-md navbar-light navbar-custom border-bottom ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">LOGO</a>
      
@@ -19,13 +19,13 @@
       <!-- Navbar links -->
       <div class="collapse navbar-collapse" [class.collapse]="collapse" (window:resize)="collapse = true">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0  ">
-          <li class="nav-item" >
-            <a class="nav-link " ActiveLinks aria-current="page"(click)="onSelect('home')">Home</a>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="/"    aria-current="page">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link"ActiveLinks (click)="onSelect('gallery')">Gallery</a>
+          <li class="nav-item"routerLinkActive="active">
+            <a class="nav-link" routerLink="/gallery">Gallery</a>
           </li>
-          <li class="nav-item dropdown" ngbDropdown>
+          <li class="nav-item dropdown" ngbDropdown routerLinkActive="active">
             <a class="nav-link" tabindex="0" ngbDropdownToggle id="navbarDropdown1" role="button">
               Cities
             </a>
@@ -35,13 +35,13 @@
               <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Gjakova</a>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link " (click)="onSelect('contact')">Contact</a>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="/contact">Contact</a>
           </li>
         </ul>
         <form class="d-flex">
    
-          <input nz-input placeholder="Search" [(ngModel)]="value" />
+          <input nz-input placeholder="Search"  />
           <button nz-button nzType="default" nzShape="circle"><i nz-icon nzType="search" nzTheme="outline"></i></button>
       
         </form>
