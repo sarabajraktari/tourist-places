@@ -1,5 +1,5 @@
 <!--fixed-top -->
-<nav class="navbar navbar-expand-md navbar-light navbar-custom border-bottom ">
+<nav class="navbar navbar-expand-md navbar-light fixed-top navbar-custom border-bottom ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">LOGO</a>
      
@@ -29,10 +29,16 @@
             <a class="nav-link" tabindex="0" ngbDropdownToggle id="navbarDropdown1" role="button">
               Cities
             </a>
-            <div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu">
-              <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Prizren</a>
-              <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Prishtina</a>
-              <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Gjakova</a>
+            <div ngbDropdownMenu
+             aria-labelledby="navbarDropdown1"
+              class="dropdown-menu"
+              >
+              <a ngbDropdownItem href="#"
+              *ngFor="let city of cities"
+              [routerLink]="['cities',city.id]"
+              routerLinkActive="active"
+              >{{city.name}}</a>
+
             </div>
           </li>
           <li class="nav-item" routerLinkActive="active">

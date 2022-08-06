@@ -1,13 +1,12 @@
 .mainPage{
   position: relative;
+
 }
-
-
 /*Text style*/
 .focus-in-contract-bck {
-	animation: focus-in-contract-bck 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: focus-in-contract-bck 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     text-align: center;
-    padding-top:10% ;
+    padding-top:15% ;
 }
  @keyframes focus-in-contract-bck {
     0% {
@@ -23,5 +22,66 @@
     }
   }
 
+  /*Card style */
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  border-radius: 30px;
+  overflow:hidden;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+  margin-left: 40px;
+  align-items: center; 
+ 
+}
+
+.card-profile-img {
+
+  width: 500px;
+  height: 68%; 
+  object-fit:contain;
   
+}
+
+.card-description-bk {
+  background-image: linear-gradient(0deg , #0c0e16, #696566);
+  border-radius: 30px;
+  position: absolute;
+  top: 55%;
+  left: -5px;
+  height: 65%;
+  width: 108%;
+  transform: skew(15deg, -9deg);
+ 
+}
+.card-name {
+  position: absolute;
+  color: #fff;
+  font-weight: 500;
+  /* left: 70px; */
+  bottom: 20%;
+  text-align: center;
+  font-family: Albert;
+  font-size: 25px;
+  padding-bottom:20px ;
+}
+
+.card-btn {
+  position: absolute;
+  color: #fff;
+   left: 90px;
+  bottom: 10%;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
   
+}
+
+.card-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+

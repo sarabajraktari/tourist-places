@@ -19,12 +19,9 @@ import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
-
-
-
-
-
-registerLocaleData(en);
+import { CitiesComponent } from './cities/cities.component';
+import { CityDetailComponent } from './cities/city-detail/city-detail.component';
+import { CitiesService } from './services/cities.service';
 
 @NgModule({
   declarations: [
@@ -34,8 +31,8 @@ registerLocaleData(en);
     HomeComponent,
     GalleryComponent,
     ContactComponent,
-
-
+    CitiesComponent,
+    CityDetailComponent,
 
   ],
   imports: [
@@ -50,10 +47,8 @@ registerLocaleData(en);
     MdbCheckboxModule,
     AppRoutingModule
 
-
-
   ],
-  providers: [{ provide: NZ_I18N, useValue: en_US }],
+  providers: [CitiesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

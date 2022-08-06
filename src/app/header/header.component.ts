@@ -1,4 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { City } from '../models/city.model';
+import { CitiesService } from '../services/cities.service';
 
 
 @Component({
@@ -7,10 +9,11 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+  cities: City[];
+  constructor(private CitiesService: CitiesService) { }
 
   ngOnInit(): void {
+    this.cities = this.CitiesService.getCities();
   }
   collapse = true;
 
