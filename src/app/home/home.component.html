@@ -1,19 +1,22 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 <div class="container">
-<div class="row"> 
+  <div class="row"> 
 
-  <div class="bg-container">
-    <div class="mainPage">
-    <h1 class="focus-in-contract-bck">Welcome to our tourist sites</h1>
-    </div>
+      <div class="mainPage ">
+      <h1 class="focus-in-contract-bck">Welcome to our tourist sites</h1>
+
+      </div>
   </div>
 
   <!--Cards-->
   <div class="row justify-content-center" >
-    <h1 style="margin-top:15%; font-family:Albert ;">Cities</h1>
-    <div class="card col-4" *ngFor="let city of cities; "  >
+    <h1 style="margin-top:15%; font-family:Albert ;">Top Cities</h1>
+    <div class="card col-xl-3 col-md-4 col-md-3 col-xs-12" *ngFor="let city of cities; "  >
       <img class="card-profile-img" src="{{city.imagePath}}" alt="">
       <div class="card-description-bk"></div>
-      <div class="card-name " >
+      <div class="card-name ">
         <p>{{city.name}}</p>
       </div>
       <div class="card-btn">
@@ -23,5 +26,5 @@
   </div>
 
 </div>
-</div>
+<!-- </div> -->
 

@@ -6,7 +6,7 @@
 .focus-in-contract-bck {
 	animation: focus-in-contract-bck 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     text-align: center;
-    padding-top:15% ;
+    padding-top:20% ;
 }
  @keyframes focus-in-contract-bck {
     0% {
@@ -85,3 +85,21 @@
 }
 
 
+/* Tablets */
+
+@media screen and (max-width:768px) {
+    
+  .focus-in-contract-bck{
+    padding-top: 25%;
+  }
+}
+
+/* Mobiles */
+
+@media screen and (max-width:480px) {
+  .focus-in-contract-bck{
+    padding-top: 30%;
+  }
+
+
+}

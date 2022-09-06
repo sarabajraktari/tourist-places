@@ -22,6 +22,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { CitiesComponent } from './cities/cities.component';
 import { CityDetailComponent } from './cities/city-detail/city-detail.component';
 import { CitiesService } from './services/cities.service';
+import { ClickOutsideDirective } from './shared/clickOutside.directive';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { CitiesService } from './services/cities.service';
     ContactComponent,
     CitiesComponent,
     CityDetailComponent,
+    ClickOutsideDirective
 
   ],
   imports: [

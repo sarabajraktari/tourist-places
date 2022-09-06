@@ -3,15 +3,34 @@
     /* margin-bottom: 12px; */
   }
 
-.navbar-custom {
-    background-color:#EDE7F6;
-
+nav{
+    background-color: white;
+    /* border: 1px solid red; */
+    border-top:none;
+    /* border-bottom: 1px solid black; */
+    box-shadow: 0px 2px 3px black;
 }
 
 
+nav li a{
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+.logo{
+  align-items: center;
+  justify-content: center;
+  margin-bottom: auto;
+  color: #000;
+}
+/* nav li{
+float: left;
+list-style-type: none;
+margin: 7px 7px;
+} */
 
 /* Hamburger icon style */
-body {
+/* body {
     align-items: center;
     display: flex;
     height: 100%;
@@ -20,7 +39,7 @@ body {
     overflow: hidden;
     position: absolute;
     width: 100%;
-  }
+  } */
 .button{
     border-style: dotted;
 }
@@ -60,3 +79,13 @@ body {
   .ham1.active .bottom {
     stroke-dashoffset: -138px;
   }
+
+
+.login li a{
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+
+}
+
+

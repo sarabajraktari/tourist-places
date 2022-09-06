@@ -1,9 +1,13 @@
 <!--fixed-top -->
-<nav class="navbar navbar-expand-md navbar-light fixed-top navbar-custom border-bottom ">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">LOGO</a>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<nav class="navbar navbar-expand-md  fixed-top navbar-custom  " >
+    <div class="container-fluid" clickOutside (clickOutside)="clickedOutside()">
+      <a class="navbar-brand logo"  routerLink="/" >LOGO</a>
      
-      <svg class="ham hamRotate ham1 d-lg-none flex-column d-flex " viewBox="0 0 100 100" width="50" onclick="this.classList.toggle('active')" (click)="collapse=!collapse">
+      <svg class="ham hamRotate ham1 d-md-none flex-column d-flex " viewBox="0 0 100 100" width="50" onclick="this.classList.toggle('active')" (click)="collapse=!collapse">
         <path
               class="line top"
               d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
@@ -17,23 +21,27 @@
     
       
       <!-- Navbar links -->
-      <div class="collapse navbar-collapse" [class.collapse]="collapse" (window:resize)="collapse = true">
+      <div class="collapse navbar-collapse" [class.collapse]="collapse" (window:resize)="collapse = true"   >
         <ul class="navbar-nav me-auto mb-2 mb-lg-0  ">
           <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/"    aria-current="page">Home</a>
+            <a class="nav-link" routerLink="/"    aria-current="page">
+              Home
+            </a>
           </li>
-          <li class="nav-item"routerLinkActive="active">
-            <a class="nav-link" routerLink="/gallery">Gallery</a>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="/gallery">
+              Gallery
+            </a>
           </li>
           <li class="nav-item dropdown" ngbDropdown routerLinkActive="active">
-            <a class="nav-link" tabindex="0" ngbDropdownToggle id="navbarDropdown1" role="button">
+            <a class="nav-link "  tabindex="0" ngbDropdownToggle id="navbarDropdown1" role="button">
               Cities
             </a>
             <div ngbDropdownMenu
-             aria-labelledby="navbarDropdown1"
+            aria-labelledby="dropdownBasic1"
               class="dropdown-menu"
               >
-              <a ngbDropdownItem href="#"
+              <a ngbDropdownItem 
               *ngFor="let city of cities"
               [routerLink]="['cities',city.id]"
               routerLinkActive="active"
@@ -42,11 +50,13 @@
             </div>
           </li>
           <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/contact">Contact</a>
+            <a class="nav-link" routerLink="/contact">
+              Contact
+            </a>
           </li>
         </ul>
         <form class="d-flex">
-   
+
           <input nz-input placeholder="Search"  />
           <button nz-button nzType="default" nzShape="circle"><i nz-icon nzType="search" nzTheme="outline"></i></button>
       
@@ -54,7 +64,12 @@
       </div>
     </div>
   </nav>
+  <div class="container">
+    <nav>
+ 
 
+
+</nav>
   
 
 

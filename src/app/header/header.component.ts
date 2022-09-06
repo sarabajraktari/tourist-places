@@ -9,6 +9,7 @@ import { CitiesService } from '../services/cities.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+
   cities: City[];
   constructor(private CitiesService: CitiesService) { }
 
@@ -20,6 +21,10 @@ export class HeaderComponent implements OnInit {
   value = ''
   isCollapsed = false;
 
+
+  clickedOutside(): void {
+    this.collapse = true;
+  }
   // toggleCollapsed(): void {
   //   this.isCollapsed = !this.isCollapsed;
   // }
