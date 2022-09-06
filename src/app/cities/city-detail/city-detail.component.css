@@ -52,7 +52,7 @@
     font-size: 20px;
   }
  
-  .card-circle {
+  /* .card-circle {
     border: 1px solid #aaa;
     border-radius: 50%;
     display: inline;
@@ -61,7 +61,7 @@
     height: 25px;
     text-align: center;
     width: 25px;
-  }
+  } */
 
   
   .card-name {
@@ -115,6 +115,7 @@
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
+    /* height:auto; */
   
   }
 
@@ -123,6 +124,20 @@
     box-shadow: 0 2px 25px 2px rgba(0, 0, 0, 1), 0 2px 50px 2px rgba(0, 0, 0, 1), 0 0 100px 3px rgba(0, 0, 0, .25);
     height: 1px;
     margin: -1px auto 0;
-    width: 80%;
+    width: 100%;
     z-index: -1;
   }  
+/* Tablets */
+  @media screen and (max-width:900px){
+    .card-media {
+      width: 100%;
+      height: auto;
+    }
+  }
+/* Mobiles */
+  @media screen and (max-width:390px){
+    .card-media {
+      width: 100%;
+      height: auto;
+    }
+  }

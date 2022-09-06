@@ -55,27 +55,28 @@ export class CitiesService {
         new City(
             1,
             'Prishtina',
-            'Pristina is  the capital city of Kosovo. It`s full of interesting architecture, including the National Library… You can judge it for yourself!',
+            'Pristina is  the capital city of Kosovo. It`s full of interesting architecture, including the National Library.',
             'https://thebalkanista.com/wp-content/uploads/2019/11/69864330_1668378579964773_5072367861318549504_n.jpg'),
         new City(
             2,
             'Peja',
-            'Peja surprised me in the best way possible.',
+            'Peja surprised me in the best way possible.  This charming city in Kosovo was full of fantastic markets, beautiful nature accessible via a day trip from Peja, and beautiful mountains framing the city.'
+            ,
             'https://www.wanderlustingk.com/wp-content/uploads/2017/10/kosovo-3616101429_orig.jpg'),
         new City(
             3,
             'Gjakova',
-            'Most backpackers in Kosovo pass through Prizren,',
+            'We ended up in Gjakova by mistake, but this city in Kosovo has some of the most charming architecture in its Bazaar that we saw while in Kosovo.',
             'https://www.wanderlustingk.com/wp-content/uploads/2017/10/kosovo-13516101538_orig.jpg'),
         new City(
             4,
             'Ferizaj',
-            'Most backpackers in Kosovo pass through Prizren,',
+            'Ferizaj has always been considered as a city where tolerance and coexistence in terms of religion and culture has been part of the society in the last centuries.',
             'https://upload.wikimedia.org/wikipedia/commons/2/28/Ferizaj.jpg'),
         new City(
             5,
             'Gjilan',
-            'Most backpackers in Kosovo passe312424 through Prizren,',
+            'Gjilan is located in the southeastern part of Kosovo, the region of Anamorava. Its geographic position makes it possible to make good connections with other centers of Kosovo and the region.',
             'https://upload.wikimedia.org/wikipedia/commons/b/b0/Gjilani_pas_dite.jpg')
     ];
 
