@@ -4,7 +4,7 @@
             <div class="card u-clearfix">
               <!-- <div class="card-body"> -->
                 <!-- <span class="card-number subtle">{{city.id}}</span> -->
-                <div class="row">
+                <div class="row responsive">
                   <h2 class="card-name">{{city.name}}</h2>
                   <span class="card-description subtle">{{city.description}}</span>
                   <div class="card-read">Read</div>
@@ -13,14 +13,14 @@
                 </div>
 
                 <!-- HISTORY -->
-                <div class="row" *ngFor="let history of city.history">
+                <div class="row responsive" *ngFor="let history of city.history; let i=index;">
                   <div class="history-card col-5" >
 
                       <h3>History</h3>
                       <hr>
-                      <span class="card-description subtle" [ngClass]="{'limitTextHeight': isReadMore}" >{{history.description}}</span>
+                      <p class="card-description subtle" [ngClass]="{'limitTextHeight': isReadMore}" >{{history.description}}</p>
 
-                      <button type="button" class="btn" (click)="showText()">
+                      <button type="button" class="btn" (click)="showText(i)">
                         {{ isReadMore ? 'Read More': 'Read Less' }}
                       </button>
                   </div>
@@ -32,7 +32,7 @@
 
                 <!-- GEOGRAPHY -->
 
-                <div class="row" *ngFor="let geography of city.geography">
+                <div class="row responsive" *ngFor="let geography of city.geography">
 
                   <div class="col-7" >
                     <img src="{{geography.image}}"  class="imagesGeograpghy"alt="">
@@ -43,17 +43,39 @@
 
                       <h3>Geography</h3>
                       <hr>
-                      <span class="card-description subtle">{{geography.description}}</span>
+                      <p class="card-description subtle">{{geography.description}}</p>
 
                     
                   </div>
-               
-                 
                 </div>
-              
+            
              </div>
             </div>
-          <div class="card-shadow" style="margin-bottom:10% ;"></div>
+          <!-- <div class="card-shadow" style="margin-bottom:10% ;"></div> -->
+
+              <!-- TOURIST PLACES -->
+       
+              <div class="text-center row ">
+                  <h3 style="margin-top:20px ;">Top Attractions in {{city.name}}  </h3>
+                 
+                  <div class="col" *ngFor="let tourist of city.touristPlaces;let i=index">
+                  <div class="card tourist">
+                    <img src="{{tourist.image}}" class="card-img-top" alt="..." >
+                    <div class="card-body">
+                      <h5 class="card-title">{{tourist.name}}</h5>
+                      <p class="card-text subtle" [ngClass]="{'limitTextHeight': isReadMore}">{{tourist.descrtiption}}</p>
+                      <button type="button" class="btn" (click)="showText(i)">
+                        {{ isReadMore ? 'Read More': 'Read Less' }}
+                      </button>
+                    </div>
+                  </div>
+                
+                </div>
+
+          
+
+                  
+                </div>
          
 
 </div>

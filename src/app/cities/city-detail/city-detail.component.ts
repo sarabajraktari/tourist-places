@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { City } from 'src/app/models/city.model';
+import { touristPlaces } from 'src/app/models/tourist-places.model';
 import { CitiesService } from 'src/app/services/cities.service';
 
 
@@ -12,6 +13,8 @@ import { CitiesService } from 'src/app/services/cities.service';
 export class CityDetailComponent implements OnInit {
   city: City;
   id: number;
+
+  data = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   constructor(private CitiesService: CitiesService, private route: ActivatedRoute) { }
 
   ngOnInit() {
@@ -28,7 +31,8 @@ export class CityDetailComponent implements OnInit {
 
   isReadMore = true
 
-  showText() {
+  showText(index: number) {
+    // this.CitiesService.getCity(index);
     this.isReadMore = !this.isReadMore
   }
 
