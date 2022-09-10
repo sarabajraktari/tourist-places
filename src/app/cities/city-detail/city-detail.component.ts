@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Params, Router } from '@angular/router';
 import { City } from 'src/app/models/city.model';
 import { touristPlaces } from 'src/app/models/tourist-places.model';
 import { CitiesService } from 'src/app/services/cities.service';
@@ -11,30 +11,52 @@ import { CitiesService } from 'src/app/services/cities.service';
   styleUrls: ['./city-detail.component.css']
 })
 export class CityDetailComponent implements OnInit {
-  city: City;
+  city: any;
   id: number;
+  isReadMore = true
 
-  data = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-  constructor(private CitiesService: CitiesService, private route: ActivatedRoute) { }
+  constructor(private CitiesService: CitiesService, private route: ActivatedRoute, private router: Router) {
+    router.events.subscribe((val) => {
+      console.log(val);
+
+      // see also 
+      if (val instanceof NavigationEnd) {
+        this.redirect(val.url.split('/')[2])
+      }
+
+    });
+  }
 
   ngOnInit() {
 
-    this.route.params
-      .subscribe(
-        (params: Params) => {
-          this.id = +params['id'];
-          this.city = this.CitiesService.getCity(this.id);
-        }
-      );
+    // this.route.params
+    //   .subscribe(
+    //     (params: Params) => {
+    //       this.id = +params['id'];
+    //       this.city = this.CitiesService.getCity(this.id);
+    //     }
+    //   );
+    this.id = this.route.snapshot.params['id'];
 
+    this.redirect(this.id)
   }
 
-  isReadMore = true
+  redirect(id: any) {
+    console.log(id);
+
+    this.CitiesService.getCityById(id)
+      .subscribe(cityData => {
+        this.city = cityData;
+      });
+  }
+
+
+
 
   showText(index: number) {
-    // this.CitiesService.getCity(index);
-    this.isReadMore = !this.isReadMore
-  }
 
+    this.isReadMore = !this.isReadMore
+
+  }
 
 }

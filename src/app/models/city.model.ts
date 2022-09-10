@@ -6,27 +6,27 @@ export class City {
     id: number;
     name: string;
     description: string;
-    imagePath: string;
+    image: string;
     history: history[];
-    geography: geography[];
-    touristPlaces: touristPlaces[];
     // hotels: hotel[];
 
     constructor(id: number,
         name: string,
         description: string,
-        imagePath: string,
+        image: string,
         history: history[],
-        geography: geography[],
-        touristPlaces: touristPlaces[]) {
+    ) {
         this.id = id
         this.name = name;
         this.description = description;
-        this.imagePath = imagePath;
+        this.image = image;
         this.history = history;
-        this.geography = geography;
-        this.touristPlaces = touristPlaces;
+        // this.geography = geography;
+        // this.touristPlaces = touristPlaces;
         // this.hotels = hotels;
     }
 
 }
+    // history: history[],
+    //     geography: geography[],
+    //     touristPlaces: touristPlaces[]

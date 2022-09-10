@@ -13,15 +13,18 @@ import { CitiesService } from '../services/cities.service';
 })
 export class HomeComponent implements OnInit {
 
-  cities: City[];
+  cities: City[] = [];
   constructor(private CitiesService: CitiesService, private route: ActivatedRoute) {
 
   }
 
-  ngOnInit(): void {
-    this.cities = this.CitiesService.getCities();
+  ngOnInit() {
+    this.CitiesService.getCities().subscribe((data) => {
+      this.cities = data;
+    })
 
   }
+
 
 
 

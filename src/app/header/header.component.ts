@@ -1,4 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
 import { City } from '../models/city.model';
 import { CitiesService } from '../services/cities.service';
 
@@ -11,10 +13,14 @@ import { CitiesService } from '../services/cities.service';
 export class HeaderComponent implements OnInit {
 
   cities: City[];
-  constructor(private CitiesService: CitiesService) { }
+
+  constructor(private CitiesService: CitiesService, private route: Router) { }
 
   ngOnInit(): void {
-    this.cities = this.CitiesService.getCities();
+    this.CitiesService.getCities().subscribe((data) => {
+      this.cities = data;
+    });
+
   }
   collapse = true;
 
@@ -28,5 +34,10 @@ export class HeaderComponent implements OnInit {
   // toggleCollapsed(): void {
   //   this.isCollapsed = !this.isCollapsed;
   // }
+  getById(index: number) {
+    console.log(index);
 
+    this.route.navigateByUrl(`cities/${index}`)
+
+  }
 }

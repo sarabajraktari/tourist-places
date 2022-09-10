@@ -42,7 +42,7 @@
               class="dropdown-menu"
               >
               <a ngbDropdownItem 
-              *ngFor="let city of cities"
+              *ngFor="let city of cities;"
               [routerLink]="['cities',city.id]"
               routerLinkActive="active"
               >{{city.name}}</a>
