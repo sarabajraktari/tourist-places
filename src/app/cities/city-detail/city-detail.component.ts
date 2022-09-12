@@ -13,7 +13,6 @@ import { CitiesService } from 'src/app/services/cities.service';
 export class CityDetailComponent implements OnInit {
 
   city: any = [];
-  cities: City[];
   id: number;
   isReadMore = true
 
@@ -54,11 +53,7 @@ export class CityDetailComponent implements OnInit {
       });
   }
 
-  getCities() {
-    this.CitiesService.getCities().subscribe((data) => {
-      this.cities = data;
-    })
-  }
+
 
 
 

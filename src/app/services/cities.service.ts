@@ -187,7 +187,7 @@ export class CitiesService {
     baseUrl: any = environment.baseUrl;
 
 
-    getCities(): Observable<City[]> {
+    getCities() {
         return this.http.get<City[]>(this.baseUrl + '/cities')
             .pipe(map((data) => {
                 return data;
@@ -197,7 +197,7 @@ export class CitiesService {
 
 
 
-    getCityById(index: number): Observable<City[]> {
+    getCityById(index: number) {
         return this.http.get<City[]>(this.baseUrl + '/cities/' + index)
             .pipe(map((data) => {
                 return data;

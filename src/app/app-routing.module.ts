@@ -7,7 +7,7 @@ import { GalleryComponent } from "./gallery/gallery.component";
 import { HomeComponent } from "./home/home.component";
 
 const appRoutes: Routes = [
-    { path: '', component: HomeComponent },
+    { path: "", component: HomeComponent },
     { path: 'gallery', component: GalleryComponent },
     { path: 'contact', component: ContactComponent },
     {

@@ -17,8 +17,8 @@ export class HeaderComponent implements OnInit {
   constructor(private CitiesService: CitiesService, private route: Router) { }
 
   ngOnInit(): void {
-    this.CitiesService.getCities().subscribe((data) => {
-      this.cities = data;
+    this.CitiesService.getCities().subscribe((res) => {
+      this.cities = res;
     });
 
   }
