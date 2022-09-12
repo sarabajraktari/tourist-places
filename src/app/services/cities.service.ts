@@ -9,7 +9,6 @@ import { touristPlaces } from "../models/tourist-places.model";
 
 @Injectable({ providedIn: 'root' })
 export class CitiesService {
-    cities: [];
 
     // private cities: City[] = [
     //     new City(
@@ -186,7 +185,9 @@ export class CitiesService {
     // ];
     constructor(private http: HttpClient) { }
     baseUrl: any = environment.baseUrl;
-    getCities() {
+
+
+    getCities(): Observable<City[]> {
         return this.http.get<City[]>(this.baseUrl + '/cities')
             .pipe(map((data) => {
                 return data;
@@ -195,23 +196,24 @@ export class CitiesService {
     }
 
 
-    // getCity(index: number) {
-    //     return this.cities[index];
-    // }
-    getCityById(index: number) {
-        return this.http.get(this.baseUrl + '/cities/' + index)
+
+    getCityById(index: number): Observable<City[]> {
+        return this.http.get<City[]>(this.baseUrl + '/cities/' + index)
             .pipe(map((data) => {
                 return data;
             })
             );
     }
+
     // getPlacesId(index: number) {
     //     return this.cities[index].touristPlaces.findIndex;
 
     // }
 
 
-
+    // getCity(index: number) {
+    //     return this.cities[index];
+    // }
 
 
 }

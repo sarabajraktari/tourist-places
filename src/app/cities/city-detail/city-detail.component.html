@@ -5,38 +5,38 @@
               <!-- <div class="card-body"> -->
                 <!-- <span class="card-number subtle">{{city.id}}</span> -->
                 <div class="row responsive" >
-                  <h2 class="card-name">{{city?.name}}</h2>
-                  <span class="card-description subtle">{{city?.description}}</span>
+                  <h2 class="card-name">{{city.name}}</h2>
+                  <span class="card-description subtle">{{city.description}}</span>
                   <div class="card-read">Read</div>
-                  <img src="{{city?.image}}" alt="" class="card-media" />
+                  <img src="{{city.image}}" alt="" class="card-media" />
                 </div>
 
                 <!-- HISTORY -->
-                <!-- <div class="row responsive" *ngFor="let cities of city; let i=index;">
-                    <div *ngFor="let history of city.history ">
-                  <div class="history-card col-5" >
+                <div class="row responsive">
+        
+                  <div class="history-card col-5"  >
 
                       <h3>History</h3>
                       <hr>
-                      <p class="card-description subtle" [ngClass]="{'limitTextHeight': isReadMore}" >{{history.description}}</p>
+                      <p class="card-description subtle" [ngClass]="{'limitTextHeight': isReadMore}" >{{city?.history?.description}}</p>
 
-                      <button type="button" class="btn" (click)="showText(i)">
+                      <button type="button" class="btn" (click)="showText()">
                         {{ isReadMore ? 'Read More': 'Read Less' }}
                       </button>
                   </div>
                
                   <div class="col-7" >
-                    <img src="{{history.image}}"  class="images"alt="">
+                    <img src="{{city?.history?.image}}"  class="images"alt="">
                   </div>
-                  </div>
-                </div> -->
-
+                </div>
+        
+                
                 <!-- GEOGRAPHY -->
 
-                <!-- <div class="row responsive" *ngFor="let geography of city.geography">
+                <div class="row responsive" >
 
                   <div class="col-7" >
-                    <img src="{{geography.image}}"  class="imagesGeograpghy"alt="">
+                    <img src="{{city?.geography?.image}}"  class="imagesGeograpghy"alt="">
                   </div>
 
 
@@ -44,39 +44,42 @@
 
                       <h3>Geography</h3>
                       <hr>
-                      <p class="card-description subtle">{{geography.description}}</p>
+                      <p class="card-description subtle">{{city?.geography?.description}}</p>
 
                     
                   </div>
-                </div> -->
+                </div> 
             
-             <!-- </div>
-            </div> -->
+              </div>
+            </div>
           <!-- <div class="card-shadow" style="margin-bottom:10% ;"></div> -->
 
               <!-- TOURIST PLACES -->
        
-              <!-- <div class="text-center row ">
+               <div class="text-center row ">
                   <h3 style="margin-top:20px ;">Top Attractions in {{city.name}}  </h3>
                  
-                  <div class="col" *ngFor="let tourist of city.touristPlaces;let i=index">
-                  <div class="card tourist">
+                  <div class="col" *ngFor="let tourist of city['touristPlaces']">
+                  
+                  <div class="card tourist" *ngIf="tourist.touristPlaces">
                     <img src="{{tourist.image}}" class="card-img-top" alt="..." >
                     <div class="card-body">
-                      <h5 class="card-title">{{tourist.name}}</h5>
+                      <h5 class="card-title">{{city.name}}</h5>
                       <p class="card-text subtle" [ngClass]="{'limitTextHeight': isReadMore}">{{tourist.descrtiption}}</p>
-                      <button type="button" class="btn" (click)="showText(i)">
+                      <button type="button" class="btn" (click)="showText()">
                         {{ isReadMore ? 'Read More': 'Read Less' }}
                       </button>
                     </div>
                   </div>
+                  </div>
+
                 
                 </div>
 
           
 
                   
-                </div> -->
+                
          
 
 </div>

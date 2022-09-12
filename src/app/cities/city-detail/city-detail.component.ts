@@ -11,13 +11,16 @@ import { CitiesService } from 'src/app/services/cities.service';
   styleUrls: ['./city-detail.component.css']
 })
 export class CityDetailComponent implements OnInit {
-  city: any;
+
+  city: any = [];
+  cities: City[];
   id: number;
   isReadMore = true
 
+
   constructor(private CitiesService: CitiesService, private route: ActivatedRoute, private router: Router) {
     router.events.subscribe((val) => {
-      console.log(val);
+      // console.log(val);
 
       // see also 
       if (val instanceof NavigationEnd) {
@@ -43,17 +46,23 @@ export class CityDetailComponent implements OnInit {
 
   redirect(id: any) {
     console.log(id);
-
     this.CitiesService.getCityById(id)
       .subscribe(cityData => {
         this.city = cityData;
+      }, err => {
+        console.log(err)
       });
+  }
+
+  getCities() {
+    this.CitiesService.getCities().subscribe((data) => {
+      this.cities = data;
+    })
   }
 
 
 
-
-  showText(index: number) {
+  showText() {
 
     this.isReadMore = !this.isReadMore
 
