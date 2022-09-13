@@ -1,5 +1,6 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
+import { MdbDropdownDirective } from 'mdb-angular-ui-kit/dropdown';
 import { Observable } from 'rxjs';
 import { City } from '../models/city.model';
 import { CitiesService } from '../services/cities.service';
@@ -11,7 +12,7 @@ import { CitiesService } from '../services/cities.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  @ViewChild('dropdown') dropdown!: MdbDropdownDirective;
   cities: City[];
 
   constructor(private CitiesService: CitiesService, private route: Router) { }
@@ -40,4 +41,6 @@ export class HeaderComponent implements OnInit {
     this.route.navigateByUrl(`cities/${index}`)
 
   }
+
+
 }

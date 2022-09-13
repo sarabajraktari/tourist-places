@@ -24,7 +24,7 @@
       <div class="collapse navbar-collapse" [class.collapse]="collapse" (window:resize)="collapse = true"   >
         <ul class="navbar-nav me-auto mb-2 mb-lg-0  ">
           <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink=""    aria-current="page">
+            <a class="nav-link" routerLink="/"    aria-current="page">
               Home
             </a>
           </li>
@@ -34,18 +34,18 @@
             </a>
           </li>
           <li class="nav-item dropdown" ngbDropdown routerLinkActive="active">
-            <a class="nav-link "  tabindex="0" ngbDropdownToggle id="navbarDropdown1" role="button">
+            <a class="nav-link "   tabindex="0" ngbDropdownToggle id="navbarDropdown1" role="button">
               Cities
             </a>
-            <div ngbDropdownMenu
+            <div ngbDropdownMenu 
             aria-labelledby="dropdownBasic1"
-              class="dropdown-menu"
+              class="dropdown-menu animate slideIn" 
               >
-              <a ngbDropdownItem 
+              <a ngbDropdownItem  class="dropdownStyle"
               *ngFor="let city of cities;"
               [routerLink]="['cities',city.id]"
               routerLinkActive="active"
-              >{{city.name}}</a>
+             >{{city.name}}</a>
 
             </div>
           </li>
@@ -64,12 +64,10 @@
       </div>
     </div>
   </nav>
-  <div class="container">
-    <nav>
+
+    
  
 
-
-</nav>
   
 
 
