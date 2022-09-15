@@ -191,5 +191,35 @@
       "name":"Hadum Mosque",
       "image":"https://upload.wikimedia.org/wikipedia/commons/5/51/Kompleksi_Xhamija_e_Hadumit_03.jpg"
     }
+  ],
+  "hotels":[
+    {
+      "cityName":"Prizren",
+      "hotelName":"",
+      "description":"",
+      "images":"",
+      "price":""
+    },
+    {
+      "cityName":"Prishtine",
+      "hotelName":"",
+      "description":"",
+      "images":"",
+      "price":""
+    },
+    {
+      "cityName":"Pejë",
+      "hotelName":"",
+      "description":"",
+      "images":"",
+      "price":""
+    },
+    {
+      "cityName":"Prevalla",
+      "hotelName":"",
+      "description":"",
+      "images":"",
+      "price":""
+    }
   ]
 }
