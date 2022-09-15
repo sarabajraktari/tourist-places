@@ -141,5 +141,55 @@
       "message": "why capital city is Prishtina?",
       "id": 8
     }
+  ],
+  "gallery":[
+    {
+      "name":"National Library in Pristina Kosovo",
+      "image":"https://www.wanderlustingk.com/wp-content/uploads/2017/10/kosovo-81610146_orig.jpg"
+    },
+    {
+      "name":"Zallç Bridge from the Ottoman era",
+      "image":"https://upload.wikimedia.org/wikipedia/commons/d/d4/Ura_e_Zall%C3%A7it.jpg"
+    },
+    {
+      "name":"Rugova Canyon",
+      "image":"https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/aa/d8/d0.jpg"
+    },
+    {
+      "name":"White Drin waterfall",
+      "image":"https://www.wanderlustingk.com/wp-content/uploads/2017/10/kosovo-2416101510_orig.jpg"
+    },
+    {
+      "name":"Prizren Fortress",
+      "image":"https://www.wanderlustingk.com/wp-content/uploads/2017/10/kosovo-221161016111_orig.jpg"
+    },
+    {
+      "name":"Mirusha Waterfalls",
+      "image":"https://pbs.twimg.com/media/CmlnnU3WEAAA04p?format=jpg&name=large"
+    },
+    {
+      "name":"Mother Teresa Cathedral",
+      "image":"https://images.squarespace-cdn.com/content/v1/57b9b98a29687f1ef5c622df/1477766220002-SLJ7ZXV3N7C8PRMIVXH2/Mother+Teresa+Cathedral+kosovo?format=1000w"
+    },
+    {
+      "name":"Brezovica",
+      "image":"https://img.theculturetrip.com/768x/smart/wp-content/uploads/2017/09/1200px-brezovica_ski_resort_-_sharri_mountains-1024x678.jpg"
+    },
+    {
+      "name":"Terzijski Bridge",
+      "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Terzijski_Most.JPG/800px-Terzijski_Most.JPG"
+    },
+    {
+      "name":"Church of St. Nicholas, Prizren",
+      "image":"https://upload.wikimedia.org/wikipedia/commons/8/86/Church_of_St._Nicholas%2C_Prizren.jpg"
+    },
+    {
+      "name":"Novo Brdo Fortress",
+      "image":"https://upload.wikimedia.org/wikipedia/commons/4/43/Medieval_Novo_Brdo_Fortress_after_reconstruction.jpg"
+    },
+    {
+      "name":"Hadum Mosque",
+      "image":"https://upload.wikimedia.org/wikipedia/commons/5/51/Kompleksi_Xhamija_e_Hadumit_03.jpg"
+    }
   ]
 }

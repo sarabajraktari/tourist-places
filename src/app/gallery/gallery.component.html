@@ -1,14 +1,25 @@
-<p>gallery works!</p>
-<p>gallery works!</p>
 
-<p>gallery works!</p>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<div class="flex">
+    <div class="wrapper">
+        <h1 class="section-header">Gallery</h1>
+        <div class="main-content">
+            <div class="box" *ngFor="let gallery of gallery">
+                <img src="{{gallery.image}}" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h1>{{gallery.name}}</h1>
+          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<p>gallery works!</p>
-
-<p>gallery works!</p>
-
-<p>gallery works!</p>
-
-<p>gallery works!</p>
-
-<p>gallery works!</p>
+</div>

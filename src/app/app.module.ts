@@ -21,6 +21,7 @@ import { CityDetailComponent } from './cities/city-detail/city-detail.component'
 import { CitiesService } from './services/cities.service';
 import { ClickOutsideDirective } from './shared/clickOutside.directive';
 import { ContactService } from './services/contact.service';
+import { GalleryService } from './services/gallery.service';
 
 
 @NgModule({
@@ -52,7 +53,7 @@ import { ContactService } from './services/contact.service';
 
 
   ],
-  providers: [CitiesService, ContactService],
+  providers: [CitiesService, ContactService, GalleryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
