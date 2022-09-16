@@ -57,8 +57,10 @@ export class CityDetailComponent implements OnInit {
 
 
 
-  showText() {
 
+
+  showText() {
+    // this.CitiesService.getCityById(index);
     this.isReadMore = !this.isReadMore
 
   }

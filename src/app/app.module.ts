@@ -22,6 +22,10 @@ import { CitiesService } from './services/cities.service';
 import { ClickOutsideDirective } from './shared/clickOutside.directive';
 import { ContactService } from './services/contact.service';
 import { GalleryService } from './services/gallery.service';
+import { HotelService } from './services/hotels.service';
+import { HotelsComponent } from './hotels/hotels.component';
+import { HotelDetailComponent } from './hotels/hotel-detail/hotel-detail.component';
+
 
 
 @NgModule({
@@ -34,7 +38,10 @@ import { GalleryService } from './services/gallery.service';
     ContactComponent,
     CitiesComponent,
     CityDetailComponent,
-    ClickOutsideDirective
+    ClickOutsideDirective,
+    HotelsComponent,
+    HotelDetailComponent,
+
 
   ],
   imports: [
@@ -53,7 +60,7 @@ import { GalleryService } from './services/gallery.service';
 
 
   ],
-  providers: [CitiesService, ContactService, GalleryService],
+  providers: [CitiesService, ContactService, GalleryService, HotelService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

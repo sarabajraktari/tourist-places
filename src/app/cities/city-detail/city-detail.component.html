@@ -55,17 +55,16 @@
           <!-- <div class="card-shadow" style="margin-bottom:10% ;"></div> -->
 
               <!-- TOURIST PLACES -->
-<!--        
+       
                <div class="text-center row ">
                   <h3 style="margin-top:20px ;">Top Attractions in {{city.name}}  </h3>
                  
-                  <div class="col" *ngFor="let tourist of city['touristPlaces']">
-                  
-                  <div class="card tourist" *ngIf="tourist.touristPlaces">
-                    <img src="{{tourist.image}}" class="card-img-top" alt="..." >
+              
+                  <div class="card tourist" *ngFor="let touristPlace of city.touristPlaces;">
+                    <img src="{{touristPlace.image}}" class="card-img-top" alt="..." >
                     <div class="card-body">
-                      <h5 class="card-title">{{city.name}}</h5>
-                      <p class="card-text subtle" [ngClass]="{'limitTextHeight': isReadMore}">{{tourist.descrtiption}}</p>
+                      <h5 class="card-title">{{touristPlace.name}}</h5>
+                      <p class="card-text subtle" [ngClass]="{'limitTextHeight': isReadMore}">{{touristPlace.description}}</p>
                       <button type="button" class="btn" (click)="showText()">
                         {{ isReadMore ? 'Read More': 'Read Less' }}
                       </button>
@@ -74,7 +73,7 @@
                   </div>
 
                 
-                </div> -->
+  </div>
 
           
 
@@ -82,7 +81,6 @@
                 
          
 
-</div>
   
 
 

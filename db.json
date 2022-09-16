@@ -194,32 +194,135 @@
   ],
   "hotels":[
     {
+      "id":1,
       "cityName":"Prizren",
-      "hotelName":"",
-      "description":"",
-      "images":"",
-      "price":""
+      "image":"https://www.we-travel.at/wp-content/uploads/IMGP7282_970w.jpg",
+      "hotelsFromCity":
+    [
+          {
+            "hotelName":"hotel prizreni",
+            "description":"ssssss",
+            "images":"",
+            "price":""
+          },
+          {
+            "hotelName":"hotel prizreni1",
+            "description":"ppppppppppp",
+            "images":"",
+            "price":""
+          },
+          {
+            "hotelName":"",
+            "description":"",
+            "images":"",
+            "price":""
+          }
+    ]
     },
     {
-      "cityName":"Prishtine",
-      "hotelName":"",
-      "description":"",
-      "images":"",
-      "price":""
+      "id":2,
+      "cityName":"Prishtina",
+      "image":"https://i.pinimg.com/originals/e8/a2/0b/e8a20bbc179c858490cff786c6c2b03e.jpg",
+      "hotelsFromCity":
+      [
+            {
+              "hotelName":"hotel prishtina",
+              "description":"pppppp",
+              "images":"",
+              "price":""
+            },
+            {
+              "hotelName":"hotel prishtina 1",
+              "description":"ppppp",
+              "images":"",
+              "price":""
+            },
+            {
+              "hotelName":"",
+              "description":"",
+              "images":"",
+              "price":""
+            }
+      ]
     },
     {
-      "cityName":"Pejë",
-      "hotelName":"",
-      "description":"",
-      "images":"",
-      "price":""
+      "id":3,
+      "cityName":"Peja",
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8rcb8Bl4xiP3rCrlS6uKWhw5bEzWonD0RdA&usqp=CAU",
+      "hotelsFromCity":
+      [
+            {
+              "hotelName":"hotel peja",
+              "description":"pppppppp",
+              "images":"",
+              "price":""
+            },
+            {
+              "hotelName":"hotel peja1",
+              "description":"ppppppppppp",
+              "images":"",
+              "price":""
+            },
+            {
+              "hotelName":"hotel peja3",
+              "description":"ppppp33333",
+              "images":"",
+              "price":""
+            }
+      ]
     },
     {
+      "id":4,
       "cityName":"Prevalla",
-      "hotelName":"",
-      "description":"",
-      "images":"",
-      "price":""
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuhlTZJpnK3p29xlFIkk0SiTZTyC-QaWP2zQ&usqp=CAU",
+      "hotelsFromCity":
+      [
+            {
+              "hotelName":"prevalla1",
+              "description":"swwwwwwww",
+              "images":"",
+              "price":""
+            },
+            {
+              "hotelName":"prevalla 2",
+              "description":"ddddddddddd",
+              "images":"",
+              "price":""
+            },
+            {
+              "hotelName":"prevalla 3",
+              "description":"fffffffffffff",
+              "images":"",
+              "price":""
+            }
+      ]
+    },
+    {
+      "id":5,
+      "cityName":"Gjakova",
+      "image":"https://wander-lush.org/wp-content/uploads/2021/09/Emily-Lush-Gjakova-Kosovo-cafe-street.jpg",
+      "hotelsFromCity":
+      [
+            {
+              "hotelName":"gjakova1",
+              "description":"gjjjjjjjjjjjjjj",
+              "images":"",
+              "price":""
+            },
+            {
+              "hotelName":"gjakov2",
+              "description":"fiofiohfio",
+              "images":"",
+              "price":""
+            },
+            {
+              "hotelName":"gjakovaaa 44",
+              "description":"gkgkgkgkgkgkgkg",
+              "images":"",
+              "price":""
+            }
+      ]
     }
+
   ]
 }
