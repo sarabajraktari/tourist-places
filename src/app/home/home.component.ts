@@ -13,12 +13,13 @@ import { HotelService } from '../services/hotels.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  counter: number;
-  filteredName = '';
+
+
   cities: City[] = [];
   hotels: any = [];
-  count = 0;
-  constructor(private CitiesService: CitiesService, private route: ActivatedRoute, private hotelService: HotelService) {
+  constructor(private CitiesService: CitiesService,
+    private route: ActivatedRoute,
+    private hotelService: HotelService) {
 
   }
 
@@ -31,15 +32,16 @@ export class HomeComponent implements OnInit {
     })
   }
 
-  // countHotel() {
-  //   for (let i = 0; i < this.hotels.length; i++) {
-  //     console.log(this.count++)
-  //   }
-  // }
-
-
-
-
+  //count how many hotels we have at cities
+  ObjectLength(object: any) {
+    var length = 0;
+    for (var key in object) {
+      if (object.hasOwnProperty(key)) {
+        ++length;
+      }
+    }
+    return length;
+  };
 
 
 

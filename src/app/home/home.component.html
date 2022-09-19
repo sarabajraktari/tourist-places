@@ -33,12 +33,14 @@
         <h4 class="card-hotel-title">{{hotel.cityName}}</h4>
       </div>
       <div class="card-block">
-        <p class="card-text">Properties:{{count}}</p>
-        <a href="#" class="card-link" [routerLink]="['hotels',hotel.id]">Card link</a>
- 
+        <p class="card-text"> {{ObjectLength(hotel.hotelsFromCity)}} properties</p>
+        <a href="#" class="card-link" [routerLink]="['hotels',hotel.id]">Check out </a>
+     
       </div>
     </div>
   </div>
+
+  
 </div>
 <!-- </div> -->
 

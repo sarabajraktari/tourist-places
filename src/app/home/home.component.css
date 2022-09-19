@@ -140,6 +140,12 @@ h1{
   font-family: Albert;
   font-size: 25px;
 }
+.card-link{
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+}
 
 /* Tablets */
 

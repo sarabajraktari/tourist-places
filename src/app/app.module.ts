@@ -62,5 +62,6 @@ import { HotelDetailComponent } from './hotels/hotel-detail/hotel-detail.compone
   ],
   providers: [CitiesService, ContactService, GalleryService, HotelService],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }
