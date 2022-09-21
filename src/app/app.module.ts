@@ -24,7 +24,7 @@ import { GalleryService } from './services/gallery.service';
 import { HotelService } from './services/hotels.service';
 import { HotelsComponent } from './hotels/hotels.component';
 import { HotelDetailComponent } from './hotels/hotel-detail/hotel-detail.component';
-
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
@@ -51,7 +51,7 @@ import { HotelDetailComponent } from './hotels/hotel-detail/hotel-detail.compone
     NzButtonModule,
     NzIconModule,
     AppRoutingModule,
-
+    SwiperModule
 
   ],
   providers: [CitiesService, ContactService, GalleryService, HotelService],

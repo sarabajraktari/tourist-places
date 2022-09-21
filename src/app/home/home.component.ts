@@ -1,10 +1,8 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { City } from '../models/city.model';
 import { CitiesService } from '../services/cities.service';
 import { HotelService } from '../services/hotels.service';
-
-
 
 
 @Component({
@@ -16,12 +14,11 @@ export class HomeComponent implements OnInit {
   id: number;
   cities: City[] = [];
   hotels: any = [];
+
+
   constructor(private CitiesService: CitiesService,
     private route: ActivatedRoute,
     private hotelService: HotelService) {
-
-
-
   }
 
   ngOnInit() {
@@ -54,7 +51,5 @@ export class HomeComponent implements OnInit {
         console.log(err)
       });
   }
-
-
 }
 

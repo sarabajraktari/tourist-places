@@ -1,9 +1,6 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
-  <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
 </head>
 <div class="container">
   <div class="row"> 
@@ -30,7 +27,7 @@
 
   <div class="row justify-content-center">
     <h1 style="margin-top:5%;">Explore Hotels in Kosovo</h1>
-    <div class="card card-hotel  col-md-4 col-xs-12" *ngFor="let hotel of hotels;let i=index">
+    <div class="card card-hotel  col-md-4 col-xs-12"  *ngFor="let hotel of hotels;let i=index">
    
       <img class="card-hotel-img"  src="{{hotel.image}}" alt="Card image">
       <div class="card-block">
@@ -44,7 +41,5 @@
     </div>
   </div>
 
-</div>
 
-<!-- </div> -->
-
+ </div>
