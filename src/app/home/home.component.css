@@ -97,18 +97,7 @@
   color: white;
   text-decoration: none;
 }
-h1{
- 
-    text-transform: uppercase;
-    line-height: 70px;
-    /* padding-bottom: 30px; */
-    font-size: 50px;
-    color: #262626;
-    letter-spacing: 2px;
-    font-family: 'Teko', sans-serif;
 
-
-}
 
 /* Card Hotel Styles */
 
@@ -165,6 +154,8 @@ h1{
 
 
 }
+
+
 
 
 

@@ -27,12 +27,4 @@ export class HotelDetailComponent implements OnInit {
       });
   }
 
-
-
-
-
-
-
-
-
 }

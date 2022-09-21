@@ -20,7 +20,7 @@
                       <hr>
                       <p class="card-description subtle" [ngClass]="{'limitTextHeight': isReadMore}" >{{city?.history?.description}}</p>
 
-                      <button type="button" class="btn" (click)="showText()">
+                      <button type="button" class="btn">
                         {{ isReadMore ? 'Read More': 'Read Less' }}
                       </button>
                   </div>
@@ -55,23 +55,23 @@
           <!-- <div class="card-shadow" style="margin-bottom:10% ;"></div> -->
 
               <!-- TOURIST PLACES -->
-       
-               <div class="text-center row ">
-                  <h3 style="margin-top:20px ;">Top Attractions in {{city.name}}  </h3>
+
+               <div class="text-center row " *ngIf="city.touristPlaces">
+                  <h3 style="margin-top:20px ;" >Top Attractions in {{city.name}}  </h3>
                  
               
-                  <div class="card tourist" *ngFor="let touristPlace of city.touristPlaces;">
+                  <div class="card tourist" *ngFor="let touristPlace of city.touristPlaces;let i=index">
                     <img src="{{touristPlace.image}}" class="card-img-top" alt="..." >
                     <div class="card-body">
                       <h5 class="card-title">{{touristPlace.name}}</h5>
-                      <p class="card-text subtle" [ngClass]="{'limitTextHeight': isReadMore}">{{touristPlace.description}}</p>
-                      <button type="button" class="btn" (click)="showText()">
+                      <p class="card-text subtle"  [ngClass]="{'limitTextHeight': isReadMore}" >{{touristPlace.description}}</p>
+                      <button type="button" class="btn"  (click)="showText(i)" >
                         {{ isReadMore ? 'Read More': 'Read Less' }}
                       </button>
                     </div>
                   </div>
                   </div>
-
+           
                 
   </div>
 

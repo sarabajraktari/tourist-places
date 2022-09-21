@@ -31,13 +31,6 @@ export class CityDetailComponent implements OnInit {
 
   ngOnInit() {
 
-    // this.route.params
-    //   .subscribe(
-    //     (params: Params) => {
-    //       this.id = +params['id'];
-    //       this.city = this.CitiesService.getCity(this.id);
-    //     }
-    //   );
     this.id = this.route.snapshot.params['id'];
 
     this.redirect(this.id)
@@ -54,15 +47,11 @@ export class CityDetailComponent implements OnInit {
   }
 
 
-
-
-
-
-
-  showText() {
-    // this.CitiesService.getCityById(index);
-    this.isReadMore = !this.isReadMore
-
+  showText(index: number) {
+    // this.city.touristPlaces.index
+    this.isReadMore = !this.isReadMore;
+    console.log("you clicked " + index)
   }
+
 
 }

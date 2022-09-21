@@ -13,13 +13,14 @@ import { HotelService } from '../services/hotels.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-
+  id: number;
   cities: City[] = [];
   hotels: any = [];
   constructor(private CitiesService: CitiesService,
     private route: ActivatedRoute,
     private hotelService: HotelService) {
+
+
 
   }
 
@@ -30,6 +31,8 @@ export class HomeComponent implements OnInit {
     this.hotelService.getHotels().subscribe((data) => {
       this.hotels = data;
     })
+
+    this.hotels = this.redirect(this.id);
   }
 
   //count how many hotels we have at cities
@@ -43,7 +46,14 @@ export class HomeComponent implements OnInit {
     return length;
   };
 
-
+  redirect(id: number) {
+    this.hotelService.getHotelById(id)
+      .subscribe(data => {
+        this.hotels = data;
+      }, err => {
+        console.log(err)
+      });
+  }
 
 
 }

@@ -1,5 +1,9 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
 </head>
 <div class="container">
   <div class="row"> 
@@ -30,7 +34,7 @@
    
       <img class="card-hotel-img"  src="{{hotel.image}}" alt="Card image">
       <div class="card-block">
-        <h4 class="card-hotel-title">{{hotel.cityName}}</h4>
+        <span class="card-hotel-title">{{hotel.cityName}}</span>
       </div>
       <div class="card-block">
         <p class="card-text"> {{ObjectLength(hotel.hotelsFromCity)}} properties</p>
@@ -40,7 +44,7 @@
     </div>
   </div>
 
-  
 </div>
+
 <!-- </div> -->
 

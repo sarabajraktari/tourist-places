@@ -15,37 +15,37 @@
       },
       "touristPlaces": [
         {
-          "id": "1",
+          "id":1,
           "name": "Prizren Fortress",
           "description": "It overlooks the Prizren River which flows through Prizren, which developed around the fortress. The site of the fortress of Prizren has seen habitation and use since the Bronze Age (ca. 2000).  In late antiquity it was part of the defensive fortification system in western Dardania and was reconstructed in the era of eastern Roman Emperor Justinian.",
           "image": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Prizren_Fortress_%282021%29.jpg"
         },
         {
-          "id": "2",
+          "id": 2,
           "name": "Sinan Pasha Mosque",
           "description": "The Sinan Pasha Mosque is an Ottoman mosque in the city of Prizren, Kosovo. It was built in 1615 by Sofi Sinan Pasha, bey of Budim. The mosque overlooks the main street of Prizren and is a dominant feature in the town's skyline. Sinan Pasha Mosque was declared a Monument of Culture of Exceptional Importance in 1990 by the Republic of Serbia.",
           "image": "https://thumbs.dreamstime.com/b/view-sinan-pasha-mosque-prizren-kosovo-july-historic-city-located-kosovo-43356630.jpg"
         },
         {
-          "id": "3",
+          "id": 3,
           "name": "The Old Stone Bridge",
           "description": "The Old Stone Bridge is an Ottoman bridge and one of the monuments of Prizren, Kosovo. It crosses the river Prizrenska Bistrica (Alb. Lumëbardh) and is suspected to be from the end of the 15th century, there are only a few historical sources.",
           "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/2013-10-06_Stone_Bridge%2C_Prizren%2C_Kosovo_8649.jpg"
         },
         {
-          "id": "4",
+          "id": 4,
           "name": "Albanian League of Prizren Museum",
           "description": "The Monumental Complex of the Albanian League of Prizren is a museum complex and cultural heritage monument located in the historic city of Prizren, Kosovo. This monument belongs to the 'architectural' category, approved with number 414/77 and is under state protection. The Complex is now home to photographs, documents, objects, clothings and other cultural artifacts that date from the time of the League of Prizren.",
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Lidhja_e_Prizrenit%2C_By_MIBER.jpg/1024px-Lidhja_e_Prizrenit%2C_By_MIBER.jpg"
         },
         {
-          "id": "5",
+          "id": 5,
           "name": "Church of Holy Saviour",
           "description": "The Church of the Holy Saviour is a Serbian Orthodox church located in Prizren, Kosovo, built around 1330. The church was declared a Monument of Culture of Exceptional Importance in 1990, and it is protected by the Republic of Serbia. It was heavily damaged during the 2004 unrest in Kosovo.",
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Church_of_the_Holy_Saviour_-_Prizren.jpg/800px-Church_of_the_Holy_Saviour_-_Prizren.jpg"
         },
         {
-          "id": "6",
+          "id":6,
           "name": "Gazi Mehmet Pasha Hammam",
           "description": "It was built in 1573. It was one of three biggest Turkish Baths in the Balkans, after the Turkish Bath of Husret Bey in Sarajevo and T.B. of Daut Pasha in Skopje.Presently, galleries of the Turkish Bath of Gazi Mehmet Pasha are mainly used for figurative and photo exhibitions, literary promotion meetings, chamber music concerts, etc",
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Gazi_Mehmed_Pa%C5%9Fa_Hamam%C4%B1_-_Prizren_01.jpg/800px-Gazi_Mehmed_Pa%C5%9Fa_Hamam%C4%B1_-_Prizren_01.jpg?20100916165035"
@@ -65,7 +65,44 @@
         "description": "Pristina is situated on a alluvial plain in the regions of Llap and Kosovo across the Gollak Hills in central and eastern Kosovo.Bodies of water in Pristina Municipality include the lakes of Badovc and Batllava as well as the rivers of Llap, Prishtevka and Vellusha.",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Pristina_in_Kosovo_%28Kosovo_independent%29.svg/250px-Pristina_in_Kosovo_%28Kosovo_independent%29.svg.png"
       },
-      "touristPlaces": {}
+      "touristPlaces":[
+         {
+          "id":1,
+          "name":"NEWBORN",
+          "description":"The Newborn Monument is a typographic sculpture and tourist attraction in Pristina, Kosovo. Located in front of the Palace of Youth and Sports, the monument was unveiled on 17 February 2008, the day that Kosovo formally declared its independence from Serbia.",
+          "image":"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/ab/78/5d/monument-climate-change.jpg?w=1200&h=-1&s=1"
+         },
+         {
+          "id":2,
+          "name":"The National University Library of Kosovo ",
+          "description":"The National Library of Kosovo is the highest library institution in Kosovo established by the Assembly and is located in Pristina. The mission of the library is to collect, preserve, promote and make accessible the documentary and intellectual heritage of Kosovo. ",
+          "image":"https://thumbs.dreamstime.com/b/national-library-kosovo-pjeter-bogdani-pristina-july-entrance-designed-architect-andrija-mutnjakovic-62618059.jpg"
+         },
+         {
+          "id":3,
+          "name":"Gërmia Park",
+          "description":"Germia is a regional park located in the northeast of Prishtina, Kosovo, and covers an area of 62 square kilometres. This mountain massif is a part of the Rhodope Mountains, which lie from the Black Mountain of Skopje to Kopaonik mountains.",
+          "image":"https://i.ytimg.com/vi/70T6kGjo4RA/maxresdefault.jpg"
+         },
+         {
+          "id":4,
+          "name":"Kosovo Museum",
+          "description":"Kosovo Museum is the National Museum of Kosovo, located in the city of Pristina. Founded in 1949 by Yugoslav authorities, it is the largest museum in Kosovo, located in an Austro-Hungarian-style building from 1889 that previously served as the high military command headquarters. ",
+          "image":"https://museu.ms/remote.jpg.ashx?width=1000&height=450&format=jpg&mode=crop&scale=both&404=no_image.gif&urlb64=aHR0cHM6Ly9tdXNldW1zLmJsb2IuY29yZS53aW5kb3dzLm5ldC9kYXRhL0RvY3VtZW50cy9NVVNFVU1TL2tvcHJrbS83MjgwNS82OTA4YmMxNTdjOTU0NTAzYjdhMDE0MGFmNjlhN2U1OC5qcGc&hmac=Tlz9aGcLWhI"
+         },
+         {
+          "id":5,
+          "name":"Mother Teresa Cathedral",
+          "description":"The Cathedral of Saint Mother Teresa in Pristina is a Roman Catholic cathedral being constructed in Pristina, Kosovo. In 2007, the Government of Kosovo approved plans for the building.",
+          "image":"https://www.ncronline.org/files/styles/article_full_width/public/webRNS-KOSOVO2-09052017.jpg?itok=5vkGKYv_"
+         },
+         {
+          "id":6,
+          "name":"Ethnographic Museum",
+          "description":"The Ethnological Treasure of Kosovo is an ethnographic museum in Pristina, Kosovo. It is located in Emin Gjiku Complex, a monument of culture from the 18th century. This house was once owned by the family of Emin Gjikolli. Emin Gjikolli nickname means 'little man', in Turkish 'Eminçik', which the complex holds the name today. ",
+          "image":"https://live.staticflickr.com/410/20358108351_5afb4213a2_b.jpg"
+         }
+    ]
     },
     {
       "id": 3,
@@ -80,7 +117,39 @@
         "description": "Peja in Western Kosovo near the Rugova Canyon or Gorge. Rugova is a mountainous region entered through the North-West part of the city of Peja. It is the third region of Accursed Mountains.",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Pec_in_Kosovo_%28Kosovo_independent%29.svg/800px-Pec_in_Kosovo_%28Kosovo_independent%29.svg.png"
       },
-      "touristPlaces": {}
+      "touristPlaces":[
+        {
+         "id":1,
+         "name":"Monastery Visoki Decani",
+         "description":"The Visoki Dečani Monastery is a medieval Serbian Orthodox Christian monastery located near Deçan, Kosovo. It was founded in the first half of the 14th century by Stefan Dečanski, King of Serbia. ",
+         "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYTyyxR-CTj5UyCfrN8ZMfEXGEFxmOvRxrSg&usqp=CAU"
+        },
+        {
+         "id":2,
+         "name":"Rugova",
+         "description":"Rugova is a mountain region located to the north-west of the city of Peja, in Kosovo. According to notes of Rugova it has been inhabited since before the 12th century. In 2013, it was designated a national park by the Parliament of Kosovo. ",
+         "image":"https://media.tacdn.com/media/attractions-splice-spp-674x446/07/aa/d8/d0.jpg"
+        },
+        {
+         "id":3,
+         "name":"Bazaar of Peja",
+         "description":"Bazaar of Peja or Peja market is a market place in the center of the city of Peja, in Kosovo. It was established during Ottoman rule and is located near the Pećka Bistrica river, between parallel residence zones.",
+         "image":"https://upload.wikimedia.org/wikipedia/commons/e/e0/%C3%87arshia_e_gjat%C3%AB_e_Pej%C3%ABs.jpg"
+        },
+        {
+         "id":4,
+         "name":"Museum of Peja",
+         "description":"The Museum of Peja is a cultural institution that deals with the preservation and presentation of cultural heritage and operates within the municipality of Peja. It was established in 1971 named 'Museum of Revolution' and has served to present the historical material on the National Liberation War (LNÇ) during the Second World War that took place in the territory of the Municipality of Peja.",
+         "image":"https://www.kosovo-vacations.com/ressourcen/images/museum-peja.jpg"
+        },
+
+        {
+         "id":5,
+         "name":"Serbian Orthodox Church of Peć",
+         "description":"The Patriarchate of Peć Monastery or the Patriarchal Monastery of Peć, is a medieval Serbian Orthodox monastery located near the city of Peja, Kosovo. Built in the 13th century, it became the residence of Serbian Archbishops.",
+         "image":"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/0a/16/0c/peja-monastery.jpg?w=1200&h=1200&s=1"
+        }
+   ]
     },
     {
       "id": 4,
@@ -95,7 +164,39 @@
         "description": "Gjakova is located in the south-western part of Kosovo. To the north-east of the city, the west Kosovan plain of Dukagjini opens, while in the south-west the peak of Albanian Alps rises.",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/District_of_Gjakova_in_Kosovo.svg/800px-District_of_Gjakova_in_Kosovo.svg.png"
       },
-      "touristPlaces": {}
+      "touristPlaces":[
+        {
+         "id":1,
+         "name":"Hadum Mosque",
+         "description":"The Hadum Mosque in Gjakova, Kosovo was built in the last decade of the 16th century and was financed by Hadum Sylejman Efendia – Hadum Aga, which explains the name of the mosque. The mosque was built on the property of Jakë Vula and is located in the Old Bazaar. ",
+         "image":"https://wander-lush.org/wp-content/uploads/2021/09/Emily-Lush-Gjakova-Kosovo-mosque.jpg"
+        },
+        {
+         "id":2,
+         "name":"Ethnographic museum of Gjakova",
+         "description":"Ethnographic museum is situated in the “Citizen Traditional House”, a house with the most interesting characteristics in the city, representing the typical urban residence. This house has been built already in 1830 by masters from Dibra.",
+         "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Muzeu_Etnografik_Gjakov%C3%AB_-_Ballkoni.jpg/1200px-Muzeu_Etnografik_Gjakov%C3%AB_-_Ballkoni.jpg"
+        },
+        {
+         "id":3,
+         "name":"The Gjakova Grand Bazaar",
+         "description":"The Gjakova Grand Bazaar (Çarshia e Vjetër e Gjakovës) is a huge open-air marketplace that defines the shape and flow of the entire city. It runs for 1km at its longest point – making it the lengthiest bazaar in Kosovo – and has a total footprint of 35,000 square-metres.",
+         "image":"https://wander-lush.org/wp-content/uploads/2021/09/Emily-Lush-Gjakova-Kosovo-streets.jpg"
+        },
+        {
+         "id":4,
+         "name":"The clock tower",
+         "description":"Sitting at the end of the Grand Bazaar, Gjakova’s Clock Tower (Sahat Kulla) was constructed in 1597, a few years after the mosque was completed. It was completely destroyed in the Balkan Wars in 1912/13 – apart from the belfry, which was salvaged and relocated to Montenegro.",
+         "image":"https://wander-lush.org/wp-content/uploads/2021/09/Emily-Lush-Gjakova-Kosovo-clock-tower.jpg"
+        },
+        {
+         "id":5,
+         "name":"The tabak bridge",
+         "description":"abak Bridge, is close to town and walking distance from the church. Built in 1771, it used to be a bounding bridge between Gjakova and Shkoder in Albania. It’s closed to traffic now but you can still walk across the stones.",
+         "image":"https://wander-lush.org/wp-content/uploads/2021/09/Emily-Lush-Gjakova-Kosovo-bridge.jpg"
+        }
+     
+   ]
     },
     {
       "id": 5,
@@ -109,8 +210,7 @@
       "geography": {
         "description": "Ferizaj is located in the south-eastern part of Kosovo, about halfway between the cities of Pristina and Skopje.",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Urosevac_in_Kosovo_%28Kosovo_independent%29.svg/800px-Urosevac_in_Kosovo_%28Kosovo_independent%29.svg.png"
-      },
-      "touristPlaces": {}
+      }
     },
     {
       "id": 6,
@@ -124,8 +224,7 @@
       "geography": {
         "description": "Gjilan is located in the southeastern part of Kosovo, the region of Anamorava. Its geographic position makes it possible to make good connections with other centers of Kosovo and the region.",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Gjilani_in_Kosovo_%28Kosovo_independent%29.svg/250px-Gjilani_in_Kosovo_%28Kosovo_independent%29.svg.png"
-      },
-      "touristPlaces": {}
+      }
     }
   ],
   "contacts": [
@@ -200,22 +299,46 @@
       "hotelsFromCity":
     [
           {
-            "hotelName":"hotel prizreni",
-            "description":"ssssss",
-            "images":"",
-            "price":""
+            "hotelName":"Prior Hotel",
+            "description":"Situated in Prizren, 600 m from Sinan Pasha Mosque, Prior Hotel features accommodation with a restaurant, free private parking, a bar and a garden. Featuring a terrace, the 4-star hotel has air-conditioned rooms with free WiFi, each with a private bathroom. ",
+            "images":["https://q-xx.bstatic.com/xdata/images/hotel/840x460/208836626.jpg?k=0a665cc883bbab0250f5d93801ac7eed3bc16188e62d8790a003a0f77db934b0&o=","https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/208837051.jpg?k=973ed888b476f2dfecfc1b186041c15536e5d79bd1e96f6dd34199fa8f3f572b&o=&hp=1"],
+            "facilities":[{"facility":"Free parking"},{"facility":" Free WiFi"},{"facility":"Bar"}],
+            "stars":[1,2,3,4]
           },
           {
-            "hotelName":"hotel prizreni1",
-            "description":"ppppppppppp",
-            "images":"",
-            "price":""
+            "hotelName":"Hotel Kacinari",
+            "description":"Situated in Prizren, less than 1 km from Sinan Pasha Mosque, Hotel Kacinari features accommodation with a restaurant, free private parking, a bar and a shared lounge. Among the facilities at this property are an ATM and a concierge service, along with free WiFi throughout the property. ",
+            "images":["https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/210347451.jpg?k=70c59d7612395f9b50c3b95bbdf87457a689a8746746373fcd73fe5d116ea9ab&o=&hp=1"],
+            "facilities":[{"facility":"Free parking"},{"facility":" Free WiFi"},{"facility":"Bar"}],
+            "stars":[1,2,3,4]
           },
           {
-            "hotelName":"",
-            "description":"",
-            "images":"",
-            "price":""
+            "hotelName":"Guesthouse Hotel My Home",
+            "description":"Situated in Prizren and with Sinan Pasha Mosque reachable within 200 metres, Guesthouse Hotel My Home features express check-in and check-out, non-smoking rooms, a bar, free WiFi and a terrace. The guest house has family rooms.",
+            "images":["https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/360899430.jpg?k=42b7998cf8b4a2222a62088a62e2c59cb045cc208baf68a133d253d8c22e05e2&o=&hp=1"],
+            "facilities":[{"facility":" Free WiFi"},{"facility":"Bar"}],
+            "stars":[1,2,3]
+          },
+          {
+            "hotelName":"Hotel Cleon",
+            "description":"Located in very centre of Prizren, next to the Lumbardhi river, Hotel Cleon offers an on-site bar, free private parking and free Wi-Fi throughout the property.All rooms are air-conditioned and come with an LCD cable TV and a private bathroom with a shower and a hairdryer. Some rooms feature a balcony overlooking the town of Prizren.",
+            "images":["https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/149805728.jpg?k=9ae54d1b7bf73814575255746e38e7f1818eb17a219a5588b69b9e6317f794e6&o=&hp=1"],
+            "facilities":[{"facility":"Free parking"},{"facility":" Free WiFi"},{"facility":"Bar"}],
+            "stars":[1,2,3]
+          },
+          {
+            "hotelName":"Sky Hotel",
+            "description":"Located in Prizren, 1.6 km from Albanian League of Prizren Museum, Sky Hotel provides accommodation with a restaurant, free private parking, a bar and a terrace. The air-conditioned rooms provide a city view and come with a desk and free WiFi. ",
+            "images":["https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/231138939.jpg?k=4d22178e1fdb1bea2f4b270a81e580cb318782749027dba2c1461e9dd45e71eb&o=&hp=1"],
+            "facilities":[{"facility":"Free parking"},{"facility":" Free WiFi"},{"facility":"Bar"}],
+            "stars":[1,2,3,4]
+          },
+          {
+            "hotelName":"Premium Park Hotel",
+            "description":"Featuring a fitness centre, sauna and a hot tub, Premium Park Hotel is set in Prizren, 1.6 km from Sinan Pasha Mosque and 2.7 km from Albanian League of Prizren Museum. Guests can enjoy a drink at hotel bar. Free private parking and free WiFi throughout the property are provided.",
+            "images":["https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/226461160.jpg?k=d04cc20e56623fccbaba2bf36b41e0e874847ee5580dbe7ec8aa2f43f7b68f29&o=&hp=1"],
+            "facilities":[{"facility":" Free WiFi"},{"facility":"Bar"},{"facility":"swimming pool"},{"facility":"Free parking"},{"facility":"Spa and wellness centre"}],
+            "stars":[1,2,3,4,5]
           }
     ]
     },
