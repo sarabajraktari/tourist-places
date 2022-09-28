@@ -8,6 +8,8 @@ import { GalleryService } from '../services/gallery.service';
 })
 export class GalleryComponent implements OnInit {
   gallery: any = []
+  p: number = 1;
+  searchText: string = '';
   constructor(private galleryService: GalleryService) { }
 
   ngOnInit(): void {

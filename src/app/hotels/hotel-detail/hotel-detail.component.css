@@ -39,11 +39,86 @@
 .hotel-card .hotel-checklist {
 	list-style-type: none;
 }
-
+button{
+	background-color: #235f91;
+}
 .carousel .carousel-control-prev {
 	background: linear-gradient(to right, #333333bb, #33333300);
 }
 
 .carousel .carousel-control-next {
 	background: linear-gradient(to left, #333333bb, #33333300);
+}
+.header h1{
+	font-size: 60px;
+}
+
+.form-control{
+
+    background-color: #fffefe;
+    width: 25%;
+    font-size: 20px;
+    color: black;
+    border: none;
+    outline:none;
+    border-bottom: 3px solid black;
+}
+@media screen and (max-width:50em) {
+    .form-control{
+        width: 100%;
+    }
+}
+input:focus, input.form-control:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.clearfix {
+    position: relative;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 25px;
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+.pagination-style{
+
+    color: black;
+    background-color: white;
+ 
+    
+}
+.pagination-style::ng-deep .ngx-pagination .current {
+    background: #235f91  !important;
+    border-radius: 5px;
+    /* margin: 5px; */
+
+
+}
+
+    /* sets font color for number color when hovering */
+    .pagination-style::ng-deep .ngx-pagination a:hover {
+        background: #235f91  !important;
+        opacity: 0.8;
+        color: white;
+        border-radius: 5px;
+        transition: 0.5s ease;
+    }
+    
+    /* sets font color for disabled previous or next words */
+    /* .pagination-style::ng-deep .ngx-pagination .disabled {
+    background-color: rgb(156, 26, 26) !important;
+    } */
+
+.error-class{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
 }

@@ -1,63 +1,66 @@
 <div class="container " style="margin-top:5% ;" >
     <div class="row">
-    <div class="col">
-    <section class="get-in-touch">
-        <div class="texts">
-        <p class="title">Get in touch</p>
-        <span class="description">We're here for you, and we're wearing our thinking caps. </span>
-        </div>
-        <form class="contact-form row" [formGroup]="createContact" (ngSubmit)="createNewContact()">
-            <div class="form-field col-lg-6">
-                <input id="name"
-                class="input-text js-input"
-                type="text" 
-                formControlName='name'
-                >
-                <label class="label" for="name">Name</label>    
+        <div class="col">
+            <section class="get-in-touch">
+                <div class="texts">
+                <p class="title">Get in touch</p>
+                <span class="description">We're here for you, and we're wearing our thinking caps. </span>
+                </div>
+                <form class="contact-form row" [formGroup]="createContact" (ngSubmit)="createNewContact()">
+                    <div class="form-field col-lg-6">
+                        <input id="name"
+                        class="input-text js-input"
+                        type="text" 
+                        formControlName='name'>
+                        <label class="label" for="name">Name</label>    
+                        
+                    </div>
+                    <div class="form-field col-lg-6 ">
+                        <input id="email" 
+                        class="input-text js-input" 
+                        type="email" 
+                        formControlName='email'>
+                        <label class="label" for="email">E-mail</label>
+                    </div>
+
+                    <!-- Errors -->
+                    <div class="flex-container">
+                        <div class="errors col-lg-6">
+                            <span  *ngIf="!formValues['name'].valid && formValues['name'].touched">
+                                    This field is required ! 
+                            </span>
+                    
+                        </div>
+                        <div class="errors col-lg-6">
+                            <span  *ngIf="!formValues['email'].valid && formValues['email'].touched">
+                                    This field is required ! 
+                            </span>
+                    
+                        </div>
+                    </div>
+                    <!-- Message input -->
+                    <div class="form-field col-lg-12">
+                        <input id="message"
+                        class="input-text js-input"
+                        type="text"
+                        formControlName='message'>
+                        <label class="label" for="message">Message</label>
+                    </div>
+
+                    <!-- Error for message input -->
+                    <div class="flex-container">
+                    <div class="errors col-lg-12">
+                        <span  *ngIf="!formValues['message'].valid && formValues['message'].touched">
+                                This field is required ! 
+                        </span>
                 
-            </div>
-        
-        
-            <div class="form-field col-lg-6 ">
-                <input id="email" 
-                class="input-text js-input" 
-                type="email" 
-                formControlName='email'>
-                <label class="label" for="email">E-mail</label>
-            </div>
-            <div class="flex-container">
-                <div class="errors col-lg-6">
-                    <span  *ngIf="!formValues['name'].valid && formValues['name'].touched">
-                            This field is required ! 
-                    </span>
-            
-                </div>
-                <div class="errors col-lg-6">
-                    <span  *ngIf="!formValues['email'].valid && formValues['email'].touched">
-                            This field is required ! 
-                    </span>
-            
-                </div>
-         </div>
-            <div class="form-field col-lg-12">
-                <input id="message"
-                class="input-text js-input"
-                type="text"
-                formControlName='message'>
-                <label class="label" for="message">Message</label>
-            </div>
-            <div class="flex-container">
-            <div class="errors col-lg-12">
-                <span  *ngIf="!formValues['message'].valid && formValues['message'].touched">
-                        This field is required ! 
-                </span>
-        
-            </div>
-            </div>
-            <div class="form-field col-lg-12">
-                <button class="submit-btn" type="submit"  [disabled]="!createContact.valid">Submit</button>
-            </div>
-   </form>
-</section>
-</div></div>
+                    </div>
+                    </div>
+                    <div class="form-field col-lg-12">
+                        <button class="submit-btn" type="submit"  [disabled]="!createContact.valid">Submit</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
 </div>

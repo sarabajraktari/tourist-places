@@ -11,6 +11,8 @@ import { HotelService } from 'src/app/services/hotels.service';
 export class HotelDetailComponent implements OnInit {
   id: number;
   hotels: any = [];
+  p: number = 1;
+  searchHotel: string;
   constructor(private hotelService: HotelService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {

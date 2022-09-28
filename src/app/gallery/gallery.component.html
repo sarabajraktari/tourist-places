@@ -1,20 +1,36 @@
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-</head>
 <div class="flex">
     <div class="wrapper">
-        <h1 class="section-header">Gallery</h1>
+      
+          <div class="header">
+                <h1 class="section-header">Gallery</h1>
+                
+                <input class="form-control"
+                type="text" name="search" 
+                [(ngModel)]="searchText"
+                autocomplete="off" 
+                placeholder="Search">
+           
+          </div>
+
+      
         <div class="main-content">
-            <div class="box" *ngFor="let gallery of gallery">
+            <div class="box" *ngFor="let gallery of gallery  | filter:searchText | paginate: { itemsPerPage: 9, currentPage: p } ">
                 <img src="{{gallery.image}}" alt="">
                 <div class="img-text">
                     <div class="content">
                         <h1>{{gallery.name}}</h1>
-          
                     </div>
                 </div>
             </div>
+            
+        </div>
+        <div class="error-class" *ngIf="(gallery | filter:searchText).length < 1">
+            <h1>We did not find any place with this name !</h1>
+        </div>
+
+        <div class="clearfix">
+            <pagination-controls class="pagination-style" (pageChange)="p = $event" ></pagination-controls>
         </div>
     </div>
 

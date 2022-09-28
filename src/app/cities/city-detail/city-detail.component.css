@@ -33,6 +33,7 @@
     margin: 25px auto 0;
     position: relative;
     width: 90%;
+    
 
   }
   
@@ -43,7 +44,7 @@
     /* box-shadow: 0 0 5px rgba(75, 75, 75, .09); */
     z-index: 1;
     border: none;
-
+    
   }
 
   
@@ -129,12 +130,19 @@
   .card-body{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: stretch;
     align-items: center;
+    height: 100% !important;
+    /* white-space: normal; */
+    
+  }
+  .card-title{
+    font-size: 25px;
   }
   h3{
     font-family: 'Cormorant Garamond', serif;
     font-size: 40px;
+    
   }
 
   .images{
@@ -212,8 +220,6 @@
   width: auto;
   will-change: transform,opacity;
   z-index: 0;
-
-
   transition:all 0.5s;
 }
 
@@ -226,20 +232,7 @@
 .btn:active {
   outline: none;
 }
-.card-img-top{
-  transition: transform .4s;
-  border-radius: 10%;
-  width:  250px;
-  height: 200px;
-  object-fit: cover;
- 
-}
-.card-img-top:hover {
-  object-fit: cover;
-  transform: scale(1.4); 
-  border-radius: 10%;
- 
-}
+
 
 .d-flex {
   margin: 0% auto;
@@ -247,10 +240,110 @@
   height: 100%;
 }
 .tourist{
-
-  /* border: 1px solid black; */
   width: 20rem;
-  height: 100% !important;
-  align-items: center;
   margin: 0% auto;
+  align-items: center;
+}
+
+
+
+.card-img-top{
+  border-radius: 10%;
+  width:  300px;
+  height: 250px;
+  object-fit: cover;
+ 
+}
+/* Overlay images for tourist places */
+.content {
+  position: relative;
+  width:  300px;
+  height: 250px;
+  margin: auto;
+
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+  border-radius: 10%;
+}
+
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details p{
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.fadeIn-top{
+  top: 20%;
+}
+
+/* Modal style */
+.modal-content {
+  /* background-color:lightcyan; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.modal-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.modal-body .modal-img{
+  border-radius: 2%;
+  width:  200px;
+  height: 270px;
+  object-fit: cover;
+  flex-grow: 1;
+ 
+}
+.modal-body .description-style{
+  text-align: left;
+  padding-left: 15px;
+  font-family: serif;
+  font-size: 18px;
+  flex-grow: 2;
+  flex-shrink: 1;
 }

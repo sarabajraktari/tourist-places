@@ -299,45 +299,82 @@
       "hotelsFromCity":
     [
           {
+            "id":1,
             "hotelName":"Prior Hotel",
             "description":"Situated in Prizren, 600 m from Sinan Pasha Mosque, Prior Hotel features accommodation with a restaurant, free private parking, a bar and a garden. Featuring a terrace, the 4-star hotel has air-conditioned rooms with free WiFi, each with a private bathroom. ",
-            "images":["https://q-xx.bstatic.com/xdata/images/hotel/840x460/208836626.jpg?k=0a665cc883bbab0250f5d93801ac7eed3bc16188e62d8790a003a0f77db934b0&o=","https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/208837051.jpg?k=973ed888b476f2dfecfc1b186041c15536e5d79bd1e96f6dd34199fa8f3f572b&o=&hp=1"],
+            "images":[
+              {"image":"https://q-xx.bstatic.com/xdata/images/hotel/840x460/208836626.jpg?k=0a665cc883bbab0250f5d93801ac7eed3bc16188e62d8790a003a0f77db934b0&o="},
+              {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/208837051.jpg?k=973ed888b476f2dfecfc1b186041c15536e5d79bd1e96f6dd34199fa8f3f572b&o=&hp=1"},
+              {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/209227401.jpg?k=aa5d445affd6ff4661ae006e3500eaa1863e765bcb23c7bcf5facdf1a6bb3d3c&o=&hp=1"},
+              {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/208837245.jpg?k=f808d2d77e5eecc1f4aa8695cc6882777f246398c8a7ba00fb38bef490993474&o=&hp=1"}
+
+            ],
             "facilities":[{"facility":"Free parking"},{"facility":" Free WiFi"},{"facility":"Bar"}],
             "stars":[1,2,3,4]
           },
           {
+            "id":2,
             "hotelName":"Hotel Kacinari",
             "description":"Situated in Prizren, less than 1 km from Sinan Pasha Mosque, Hotel Kacinari features accommodation with a restaurant, free private parking, a bar and a shared lounge. Among the facilities at this property are an ATM and a concierge service, along with free WiFi throughout the property. ",
-            "images":["https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/210347451.jpg?k=70c59d7612395f9b50c3b95bbdf87457a689a8746746373fcd73fe5d116ea9ab&o=&hp=1"],
+            "images":[
+              {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/210347451.jpg?k=70c59d7612395f9b50c3b95bbdf87457a689a8746746373fcd73fe5d116ea9ab&o=&hp=1"},
+              {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/210350347.jpg?k=29fe10d734b860738b011984607bf5660cb1ddbc243f63396cfce3b9e4cf143f&o=&hp=1"},
+              {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/210350614.jpg?k=3c905d470b90092dc7097175d3f7a8f205de7e49152c2665a880cf2421a5e576&o=&hp=1"},
+              {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/210350597.jpg?k=a61aa194ecf9e6e677c713f9e41c5c8d7aabd887bf4f8c7ab6b49cc3ad748e83&o=&hp=1"}  
+              ],    
             "facilities":[{"facility":"Free parking"},{"facility":" Free WiFi"},{"facility":"Bar"}],
             "stars":[1,2,3,4]
           },
           {
+            "id":3,
             "hotelName":"Guesthouse Hotel My Home",
             "description":"Situated in Prizren and with Sinan Pasha Mosque reachable within 200 metres, Guesthouse Hotel My Home features express check-in and check-out, non-smoking rooms, a bar, free WiFi and a terrace. The guest house has family rooms.",
-            "images":["https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/360899430.jpg?k=42b7998cf8b4a2222a62088a62e2c59cb045cc208baf68a133d253d8c22e05e2&o=&hp=1"],
+            "images":[
+              {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/360899430.jpg?k=42b7998cf8b4a2222a62088a62e2c59cb045cc208baf68a133d253d8c22e05e2&o=&hp=1"},
+              {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/103976520.jpg?k=387785da9908f80eae404f1f3979e6a251d7c3d2eca8d081d01dd6fc93ed7e5e&o=&hp=1"},
+              {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/356914195.jpg?k=366a5f539f142a08fda29cf341240617b701ded8db0399f35b476ad60d4e1e0f&o=&hp=1"},
+              {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/350330724.jpg?k=2d24be0aee5a663faabf88dd3181c3ac0fc1c6f531bcab86369ac8320f8800e7&o=&hp=1"}
+            ],
             "facilities":[{"facility":" Free WiFi"},{"facility":"Bar"}],
             "stars":[1,2,3]
           },
           {
+            "id":4,
             "hotelName":"Hotel Cleon",
             "description":"Located in very centre of Prizren, next to the Lumbardhi river, Hotel Cleon offers an on-site bar, free private parking and free Wi-Fi throughout the property.All rooms are air-conditioned and come with an LCD cable TV and a private bathroom with a shower and a hairdryer. Some rooms feature a balcony overlooking the town of Prizren.",
-            "images":["https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/149805728.jpg?k=9ae54d1b7bf73814575255746e38e7f1818eb17a219a5588b69b9e6317f794e6&o=&hp=1"],
+            "images":[
+              {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/149805728.jpg?k=9ae54d1b7bf73814575255746e38e7f1818eb17a219a5588b69b9e6317f794e6&o=&hp=1"},
+              {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/149797557.jpg?k=c3fc544c260ec597076e185b784749f58b38b5eba8c83ccdc64c3d426c17de1a&o=&hp=1"},
+              {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/149806777.jpg?k=410ad9d53b2adca2168808d0ca0695952dec57b37afeb8f882e44529c3d0f9bd&o=&hp=1"},
+              {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/386946586.jpg?k=77542d2c81d0414629f1410fb10b0be70e01e46c5330a9d9f6b4a7587bcb391a&o=&hp=1"}
+            ],
             "facilities":[{"facility":"Free parking"},{"facility":" Free WiFi"},{"facility":"Bar"}],
             "stars":[1,2,3]
           },
           {
+            "id":5,
             "hotelName":"Sky Hotel",
             "description":"Located in Prizren, 1.6 km from Albanian League of Prizren Museum, Sky Hotel provides accommodation with a restaurant, free private parking, a bar and a terrace. The air-conditioned rooms provide a city view and come with a desk and free WiFi. ",
-            "images":["https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/231138939.jpg?k=4d22178e1fdb1bea2f4b270a81e580cb318782749027dba2c1461e9dd45e71eb&o=&hp=1"],
+            "images":[
+              {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/231138939.jpg?k=4d22178e1fdb1bea2f4b270a81e580cb318782749027dba2c1461e9dd45e71eb&o=&hp=1"},
+              {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/230259467.jpg?k=e3f9d7bbe0d0d5508b3239b7ca28ce73d1b61637759523e151d46358bf20581d&o=&hp=1"},
+              {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/231138939.jpg?k=4d22178e1fdb1bea2f4b270a81e580cb318782749027dba2c1461e9dd45e71eb&o=&hp=1"},
+              {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/231131912.jpg?k=aaa8336ad209605bda657fbb594b320f58282714aa0878c9a3c5216fc749d2c0&o=&hp=1"}
+            ],
             "facilities":[{"facility":"Free parking"},{"facility":" Free WiFi"},{"facility":"Bar"}],
             "stars":[1,2,3,4]
           },
           {
+            "id":6,
             "hotelName":"Premium Park Hotel",
             "description":"Featuring a fitness centre, sauna and a hot tub, Premium Park Hotel is set in Prizren, 1.6 km from Sinan Pasha Mosque and 2.7 km from Albanian League of Prizren Museum. Guests can enjoy a drink at hotel bar. Free private parking and free WiFi throughout the property are provided.",
-            "images":["https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/226461160.jpg?k=d04cc20e56623fccbaba2bf36b41e0e874847ee5580dbe7ec8aa2f43f7b68f29&o=&hp=1"],
-            "facilities":[{"facility":" Free WiFi"},{"facility":"Bar"},{"facility":"swimming pool"},{"facility":"Free parking"},{"facility":"Spa and wellness centre"}],
+            "images":[
+              {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/226461160.jpg?k=d04cc20e56623fccbaba2bf36b41e0e874847ee5580dbe7ec8aa2f43f7b68f29&o=&hp=1"},
+              {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/310130488.jpg?k=20e503d43d0392b2d96ded08fbe724cd5e26bf99a247a5121df38075a37dc554&o=&hp=1"},
+              {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/276289635.jpg?k=4f6e4e619b6c848afc416b648da40f49c4b4fccacc1a4781c994757acf5b92cd&o=&hp=1"},
+              {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/227391604.jpg?k=030215fb06d79e9527a1219fb532014e85458488afed028bc4730b7127df49d2&o=&hp=1"}
+            ],
+            "facilities":[{"facility":" Free WiFi"},{"facility":"Bar"},{"facility":"Swimming pool"},{"facility":"Free parking"},{"facility":"Spa and wellness centre"}],
             "stars":[1,2,3,4,5]
           }
     ]

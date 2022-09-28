@@ -24,7 +24,9 @@ import { GalleryService } from './services/gallery.service';
 import { HotelService } from './services/hotels.service';
 import { HotelsComponent } from './hotels/hotels.component';
 import { HotelDetailComponent } from './hotels/hotel-detail/hotel-detail.component';
-import { SwiperModule } from 'swiper/angular';
+// import { SwiperModule } from 'swiper/angular';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,8 @@ import { SwiperModule } from 'swiper/angular';
     NzButtonModule,
     NzIconModule,
     AppRoutingModule,
-    SwiperModule
+    NgxPaginationModule,
+    Ng2SearchPipeModule,
 
   ],
   providers: [CitiesService, ContactService, GalleryService, HotelService],

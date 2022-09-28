@@ -20,7 +20,7 @@
                       <hr>
                       <p class="card-description subtle" [ngClass]="{'limitTextHeight': isReadMore}" >{{city?.history?.description}}</p>
 
-                      <button type="button" class="btn">
+                      <button type="button" class="btn" (click)="showText()">
                         {{ isReadMore ? 'Read More': 'Read Less' }}
                       </button>
                   </div>
@@ -57,23 +57,56 @@
               <!-- TOURIST PLACES -->
 
                <div class="text-center row " *ngIf="city.touristPlaces">
-                  <h3 style="margin-top:20px ;" >Top Attractions in {{city.name}}  </h3>
-                 
-              
-                  <div class="card tourist" *ngFor="let touristPlace of city.touristPlaces;let i=index">
-                    <img src="{{touristPlace.image}}" class="card-img-top" alt="..." >
-                    <div class="card-body">
-                      <h5 class="card-title">{{touristPlace.name}}</h5>
-                      <p class="card-text subtle"  [ngClass]="{'limitTextHeight': isReadMore}" >{{touristPlace.description}}</p>
-                      <button type="button" class="btn"  (click)="showText(i)" >
-                        {{ isReadMore ? 'Read More': 'Read Less' }}
+                    
+                    <h3 style="margin-top:30px ;" >Top Attractions in {{city.name}}  </h3>                
+                    <div class="card tourist " *ngFor="let touristPlace of city.touristPlaces; let i= index">
+                      <div class="content">
+                        <a data-toggle="modal" data-target="#myModal" (click)="toAccessId(touristPlace)">
+                          <div class="content-overlay"></div>
+                            <img src="{{touristPlace.image}}" class="card-img-top" alt="{{touristPlace.name}}" >
+
+                            <div class="content-details fadeIn-top">
+                              <p>Click for more</p>
+                            </div>
+                       </a>
+                      </div>
+                        <div class="card-body">
+                        <h5 class="card-title ">{{touristPlace.name}}</h5>                      
+                      </div>
+
+                  </div>
+
+              <!-- Modal -->
+              <div class="modal fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" >{{touristPlaceDetail.name}}</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
+                    <div class="modal-body">
+                      <div class="img-style">
+                          <img src="{{touristPlaceDetail.image}}" alt="" class="modal-img">
+                      </div>
+                      <div class="description-style">
+                        
+                       <span >
+                        {{touristPlaceDetail.description}}
+                       </span> 
+                      </div>
+                    </div>
+
                   </div>
-                  </div>
-           
-                
+                </div>
+              </div>
+        </div>        
   </div>
+  
+
+
+
 
           
 
