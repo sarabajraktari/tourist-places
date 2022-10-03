@@ -27,6 +27,7 @@ import { HotelDetailComponent } from './hotels/hotel-detail/hotel-detail.compone
 // import { SwiperModule } from 'swiper/angular';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     AppRoutingModule,
     NgxPaginationModule,
     Ng2SearchPipeModule,
-
+    CarouselModule.forRoot()
   ],
   providers: [CitiesService, ContactService, GalleryService, HotelService],
   bootstrap: [AppComponent]

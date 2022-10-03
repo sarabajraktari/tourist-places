@@ -14,7 +14,11 @@ export class HomeComponent implements OnInit {
   id: number;
   cities: City[] = [];
   hotels: any = [];
-
+  itemsPerSlide = 4;
+  singleSlideOffset = true;
+  noWrap = true;
+  private innerWidth: number;
+  private mobileBreakpoint = 480;
 
   constructor(private CitiesService: CitiesService,
     private route: ActivatedRoute,
@@ -30,6 +34,7 @@ export class HomeComponent implements OnInit {
     })
 
     this.hotels = this.redirect(this.id);
+    this.adjustsItemsPerSlide();
   }
 
   //count how many hotels we have at cities
@@ -51,6 +56,16 @@ export class HomeComponent implements OnInit {
         console.log(err)
       });
   }
+
+  private adjustsItemsPerSlide() {
+    this.innerWidth = window.innerWidth;
+    if (this.innerWidth < this.mobileBreakpoint) {
+      this.itemsPerSlide = 1;
+    } else {
+      this.itemsPerSlide = 4;
+    }
+  }
+
 
 
 }

@@ -24,19 +24,42 @@
     <!-- Card hotel -->
   <div class="row justify-content-center">
     <h1 style="margin-top:5%;">Explore Hotels in Kosovo</h1>
-      <div class="card card-hotel  col-md-4 col-xs-12"  *ngFor="let hotel of hotels;let i=index">
-          <img class="card-hotel-img"  src="{{hotel.image}}" alt="Card image">
+    <div class="col-md-10 col-xs-12">
+    <carousel [itemsPerSlide]="itemsPerSlide"
+    [singleSlideOffset]="singleSlideOffset"
+    [interval]="0"
+    [noWrap]="noWrap">
+      <slide class="col-md-5 col-xs-12"  *ngFor="let hotel of hotels;let i=index">
+        <div class="card-hotel">
+
+
+          <img class="card-hotel-img"  src="{{hotel.image}}" alt="Card image"  style="display: block; width: 100%;">
           <div class="card-block">
             <span class="card-hotel-title">{{hotel.cityName}}</span>
           </div>
-      <div class="card-block">
-        <p class="card-text"> {{ObjectLength(hotel.hotelsFromCity)}} properties</p>
-        <a href="#" class="card-link" [routerLink]="['hotels',hotel.id]">Check out </a>
-      </div>
-    </div>
+          <div class="card-block">
+            <p class="card-text"> {{ObjectLength(hotel.hotelsFromCity)}} properties</p>
+            <a href="#" class="card-link" [routerLink]="['hotels',hotel.id]">Check out </a>
+          </div>
+          
+        </div>
+      </slide>
+  </carousel>
+</div>
   </div>
-
-
+  
+ 
+  <!-- <carousel [itemsPerSlide]="itemsPerSlide"
+            [singleSlideOffset]="singleSlideOffset"
+            [interval]="0"
+            [noWrap]="noWrap">
+    <slide *ngFor="let hotel of hotels;let i=index">
+      <img [src]="hotel.image" alt="image slide" style="display: block; width: 100%;">
+      <div class="carousel-caption">
+        <h4>Slide {{i}}</h4>
+      </div>
+    </slide>
+  </carousel> -->
   
  </div>
  
