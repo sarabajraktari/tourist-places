@@ -13,6 +13,7 @@ export class HotelDetailComponent implements OnInit {
   hotels: any = [];
   p: number = 1;
   searchHotel: string;
+  error: string;
   constructor(private hotelService: HotelService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -25,7 +26,7 @@ export class HotelDetailComponent implements OnInit {
       .subscribe(data => {
         this.hotels = data;
       }, err => {
-        console.log(err)
+        this.error = err;
       });
   }
 

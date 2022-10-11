@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit {
   itemsPerSlide = 4;
   singleSlideOffset = true;
   noWrap = true;
+  error: string;
   private innerWidth: number;
   private mobileBreakpoint = 480;
 
@@ -28,10 +29,17 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.CitiesService.getCities().subscribe((data) => {
       this.cities = data;
-    })
+    },
+      error => {
+        this.error = error;
+      });
+
     this.hotelService.getHotels().subscribe((data) => {
       this.hotels = data;
-    })
+    },
+      error => {
+        this.error = error;
+      })
 
     this.hotels = this.redirect(this.id);
     this.adjustsItemsPerSlide();
@@ -50,11 +58,11 @@ export class HomeComponent implements OnInit {
 
   redirect(id: number) {
     this.hotelService.getHotelById(id)
-      .subscribe(data => {
-        this.hotels = data;
-      }, err => {
-        console.log(err)
-      });
+    // .subscribe(data => {
+    //   this.hotels = data;
+    // }, err => {
+    //   console.log(err)
+    // });
   }
 
   private adjustsItemsPerSlide() {

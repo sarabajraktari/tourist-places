@@ -17,6 +17,7 @@ export class CityDetailComponent implements OnInit {
   isReadMore = true;
   selectedId: any;
   touristPlaceDetail: any = [];
+  error: string;
   constructor(private CitiesService: CitiesService, private route: ActivatedRoute, private router: Router) {
     router.events.subscribe((val) => {
       // console.log(val);
@@ -41,8 +42,8 @@ export class CityDetailComponent implements OnInit {
     this.CitiesService.getCityById(id)
       .subscribe(cityData => {
         this.city = cityData;
-      }, err => {
-        console.log(err)
+      }, error => {
+        error = error;
       });
   }
 

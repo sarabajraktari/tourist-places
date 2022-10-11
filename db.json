@@ -385,24 +385,48 @@
       "image":"https://i.pinimg.com/originals/e8/a2/0b/e8a20bbc179c858490cff786c6c2b03e.jpg",
       "hotelsFromCity":
       [
-            {
-              "hotelName":"hotel prishtina",
-              "description":"pppppp",
-              "images":"",
-              "price":""
-            },
-            {
-              "hotelName":"hotel prishtina 1",
-              "description":"ppppp",
-              "images":"",
-              "price":""
-            },
-            {
-              "hotelName":"",
-              "description":"",
-              "images":"",
-              "price":""
-            }
+        {
+          "id":1,
+          "hotelName":"Hotel Prima",
+          "description":"Hotel Prima is located in the centre of Prishtina Old Town, just 300 m from Mother Theresa Square. The hotel features a bar with a summer terrace, free Wi-Fi and free parking. Numerous important sites and institutions are located just a few steps away.",
+          "images":[
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/12618543.jpg?k=fbf5edaf39c83bcca11037f47f95b14145dece675e6c492ed1ee646fb4786ba6&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/12618736.jpg?k=5ea71d508804f0dafee800da47d00c77e1260b8b40f21c3b4a940330c46193de&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/12618855.jpg?k=75e7ae8ef55c8d6e27950240878219ef2d70b1ee9fb66eb4c61a28a60ac76467&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/12618779.jpg?k=2c5c9b79e6a721ea66f6f534e0facd462a7b59b29defbf3736354c842746f1e2&o=&hp=1"}
+
+          ],
+          "facilities":[{"facility":"Free parking"},{"facility":" Free WiFi"},{"facility":"Bar"}],
+          "stars":[1,2,3]
+        },
+        {
+          "id":2,
+          "hotelName":"Swiss Diamond Hotel Prishtina",
+          "description":"Centrally located next to the National Theater and the Parliament Hall, the 5-star Swiss Diamond Hotel Prishtina offers lavishly decorated luxurious accommodation, 2 restaurants and 2 bars. Facilities include a conference centre with 6 conference rooms, and a spa area with a heated indoor swimming pool and a steam bath.",
+          "images":[
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/233963410.jpg?k=f71a1bcb4289300fea97c37cd00f91d66020e1fde31ee7eb8b174df0ad1a47e2&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/244975497.jpg?k=d84e440625fb4d0381aeb86f41e14bed402a9aa968b6249509f1722504c7d5bc&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/292506440.jpg?k=6d0cd1a22a3468845ed32847b7de68320b1e6e440bb4737b09264fcf50e1ece0&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/244975708.jpg?k=89d71081130aacec89cdeacf52f0a02215dd6d6e20ca9a1c74b1398d426e2861&o=&hp=1"}
+
+          ],
+          "facilities":[{"facility":"1 swimming pool"},{"facility":" Airport shuttle"},{"facility":"Spa and wellness centre"},{"facility":"Bar"},{"facility":" Free WiFi"}],
+          "stars":[1,2,3,4,5]
+        },
+        {
+          "id":3,
+          "hotelName":"Hotel Opera",
+          "description":"Hotel Opera offers accommodation in Pristina near Statue of Mother Teresa in Pristina and National Theatre of Kosovo. The property is situated 4.1 km from Germia Park, 8.6 km from Tomb of Sultan Murad and 10 km from Gračanica Monastery. ",
+          "images":[
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/323506402.jpg?k=1d2d52f902ad27f887930c4af0950de82347b8ba9a17bb7d0208bfe971696fd8&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/349257192.jpg?k=7f32ef54d64ed7748282da2249db702af9b893327dfea9d6e9b19e4f3b656318&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/311350285.jpg?k=ac7fbebb16eca60812ce6f8346516ed4ae25975f21c60fa11890d2b6fcb0648b&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/311351128.jpg?k=d62b3504f16dd0f9aa330c25946ee9a0a2d75602bf4260c6dfd32fda267c248a&o=&hp=1"}
+
+          ],
+          "facilities":[{"facility":"24-hour front desk"},{"facility":" Free WiFi"},{"facility":"Non-smoking rooms"}],
+          "stars":[1,2,3,4]
+        }
       ]
     },
     {
@@ -411,45 +435,85 @@
       "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8rcb8Bl4xiP3rCrlS6uKWhw5bEzWonD0RdA&usqp=CAU",
       "hotelsFromCity":
       [
-            {
-              "hotelName":"hotel peja",
-              "description":"pppppppp",
-              "images":"",
-              "price":""
-            },
+        {
+          "id":1,
+          "hotelName":"Stone Bridge Hotel",
+          "description":"Situated in Peje, 16 km from Visoki Dečani Monastery, Stone Bridge Hotel features views of the city. Boasting family rooms, this property also provides guests with a terrace. The accommodation features room service and free WiFi.",
+          "images":[
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/198871383.jpg?k=b430024e408fa899f462918e6c3d1d92c9cde15b740ace105703e046abe9cfbb&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/302337737.jpg?k=54dfa584d58e1364640b9699790860520085922a2e52bbdd3a4ed7f332cc2991&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/198838134.jpg?k=1cf58ffa57b4ad6669e7eb4e103b2293a0de2b6ecbabe17ceb67397d154adb17&o=&hp=1"}
+
+
+          ],
+          "facilities":[{"facility":"Free Parking"},{"facility":" Free WiFi"},{"facility":"Airport shuttle"}],
+          "stars":[1,2,3]
+        },
       
-            {
-              "hotelName":"hotel peja3",
-              "description":"ppppp33333",
-              "images":"",
-              "price":""
-            }
+        {
+          "id":2,
+          "hotelName":"Kuint Hotel",
+          "description":"Set in Peje, 19 km from Visoki Dečani Monastery, Kuint Hotel offers accommodation with a restaurant, free private parking, a bar and a garden. Boasting family rooms, this property also provides guests with a terrace. The accommodation provides a 24-hour front desk, airport transfers, room service and free WiFi throughout the property.",
+          "images":[
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/274814688.jpg?k=2715f4bf90ee31bc6beae1ac460559dfd31ee62a105f9240782d6940d4cd97b1&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/274814967.jpg?k=e123774b93c6b9377c432322247eae6d5a8f903017c1394ec5034a18149b6c30&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/205530576.jpg?k=ca864ea8fc3dd2ab0937b25a3bf329c45701469ba9524085186ddc168df1513c&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/256668391.jpg?k=e4fcb5477513d81d2c67f9dfaa5f653732e5648cdf3da10758dba2237578065c&o=&hp=1"}
+
+          ],
+          "facilities":[{"facility":"24-hour front desk"},{"facility":" Free WiFi"},{"facility":"Non-smoking rooms"},{"facility":"Bar"}],
+          "stars":[1,2,3,4]
+        }
       ]
     },
     {
       "id":4,
-      "cityName":"Prevalla",
+      "cityName":"Brezovica",
       "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuhlTZJpnK3p29xlFIkk0SiTZTyC-QaWP2zQ&usqp=CAU",
       "hotelsFromCity":
       [
-            {
-              "hotelName":"prevalla1",
-              "description":"swwwwwwww",
-              "images":"",
-              "price":""
-            },
-            {
-              "hotelName":"prevalla 2",
-              "description":"ddddddddddd",
-              "images":"",
-              "price":""
-            },
-            {
-              "hotelName":"prevalla 3",
-              "description":"fffffffffffff",
-              "images":"",
-              "price":""
-            }
+        {
+          "id":1,
+          "hotelName":"Brezovica Hotel & SPA",
+          "description":"Brezovica Hotel & SPA features a restaurant, fitness centre, a bar and shared lounge in Brezovicë. Each accommodation at the 5-star hotel has mountain views, and guests can enjoy access to a garden and to a spa and wellness centre. The accommodation provides a 24-hour front desk, airport transfers, room service and free WiFi throughout the property.",
+          "images":[
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/297021279.jpg?k=f6cb9f8069b0b166653ebc6925d56eb647c46d85900c63f8ada35760d53b664a&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/297021696.jpg?k=138682126a48f08d38f873e3c9e126c3e96f25c62c172a5ba734312a89140dc8&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/297021445.jpg?k=a8fbd4b225de78370d58283c7de1ba302b0070a7937fff7dbedd316111201644&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/351720691.jpg?k=213b8c5323318232f832064bcd15dec531b5f9e740ac6e4dc17590c43f291a11&o=&hp=1"}
+
+          ],
+          "facilities":[{"facility":"Tea/coffee maker in all rooms"},{"facility":"3 swimming pools"},{"facility":"Fabulous breakfast"},{"facility":"Bar"}],
+          "stars":[1,2,3,4,5]
+        },
+        {
+          "id":2,
+          "hotelName":"Pine Villas Brezovice",
+          "description":"Situated 40 km from Albanian League of Prizren Museum, Pine Villas Brezovice features accommodation with a restaurant, a garden and room service for your convenience. Both WiFi and private parking are accessible at the villa free of charge.",
+          "images":[
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/369462142.jpg?k=f5832e72d2229931b7fac5a2af95a2bfa790356b19df0056d4e445f36e960c25&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/372648267.jpg?k=53783c960f96cebce0eaf28c64fbfe4b5767f4a00095517834769779549034d7&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/369462282.jpg?k=23e3be03de3e7c5a9e32da0bf3d3171bccc82b36b1feb77a6fb99cc466fd7d3a&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/369462167.jpg?k=12456f02664a8c857202fb84c3eea00c691a33637de8246ef4f89e46c11ba6b6&o=&hp=1"}
+
+          ],
+          "facilities":[{"facility":"24-hour front desk"},{"facility":" Free WiFi"},{"facility":"Non-smoking rooms"},{"facility":"Bar"}],
+          "stars":[1,2,3]
+        },
+        {
+          "id":3,
+          "hotelName":"Rock Hotel Brezovica",
+          "description":"Situated in Brezovicë, 40 km from Albanian League of Prizren Museum, Rock Hotel Brezovica features accommodation with a restaurant, free private parking, a bar and a shared lounge. Boasting a shared kitchen, this property also provides guests with a terrace.",
+          "images":[
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/310977159.jpg?k=5f27f1649903a6d4ecaf2b2813428c61b26a2daa2f79dda70487228d51c9c28a&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/310978928.jpg?k=0debbb7ee97ac1d2f96e623da27f8005910155ec162cafcd8db544032859d584&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/310981062.jpg?k=c7322639afafda95c5d23029094610e8021595b7fdb9cda1fe50b16d7a0dd1ba&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/310982559.jpg?k=672ff7c327a92ac5315c3ef667787adf23b7e8d618aacf1047178199e60d00d4&o=&hp=1"}
+
+          ],
+          "facilities":[{"facility":" Free WiFi"},{"facility":"Breakfast"},{"facility":"Bar"}],
+          "stars":[1,2,3,4]
+        }
       ]
     },
     {
@@ -458,24 +522,47 @@
       "image":"https://wander-lush.org/wp-content/uploads/2021/09/Emily-Lush-Gjakova-Kosovo-cafe-street.jpg",
       "hotelsFromCity":
       [
-            {
-              "hotelName":"gjakova1",
-              "description":"gjjjjjjjjjjjjjj",
-              "images":"",
-              "price":""
-            },
-            {
-              "hotelName":"gjakov2",
-              "description":"fiofiohfio",
-              "images":"",
-              "price":""
-            },
-            {
-              "hotelName":"gjakovaaa 44",
-              "description":"gkgkgkgkgkgkgkg",
-              "images":"",
-              "price":""
-            }
+        {
+          "id":1,
+          "hotelName":"Hotel Frida",
+          "description":"Featuring a restaurant, bar and views of garden, Hotel Frida is located in Gjakove, 26 km from Visoki Dečani Monastery. Boasting family rooms, this property also provides guests with a terrace. Albanian League of Prizren Museum is 38 km from the hotel and Kalaja Fortress Prizren is 38 km away.",
+          "images":[
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/372772305.jpg?k=9146fde9e28a095dca1016a076a43bed108096794025e6a1701571fe2c6bb993&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/372793630.jpg?k=05c69c0285f88dcd97b39483753fc2abcb6973819e35e39b2e070a230c2b3a7c&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/375544159.jpg?k=7bc2f5c989abc130da21594bbf2ff16d1b5a5632f88f7a8b1e45e63aee4eebee&o=&hp=1"}
+       
+
+          ],
+          "facilities":[{"facility":"Breakfast"},{"facility":"Bar"}],
+          "stars":[1,2,3]
+        },
+        {
+          "id":2,
+          "hotelName":"Bujtina Zhaveli",
+          "description":"Located 24 km from Visoki Dečani Monastery, Bujtina Zhaveli offers a garden, barbecue facilities and accommodation with a patio and free WiFi.",
+          "images":[
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/121793245.jpg?k=6e105bc42b7d648a22808e208d1616fa9733192d67b5cbad514e858fba3d01b8&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/121793117.jpg?k=f209343ad0dbaa1e552cbb1f53a2f8f08796e7f5bcc1037f28b65f479948077c&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/121792659.jpg?k=ce6770d784d9d1347b51ea834f1ddba229434bc24a176c56f612a250574cd7d9&o=&hp=1"}
+
+          ],
+          "facilities":[{"facility":" Free WiFi"},{"facility":"Breakfast"}],
+          "stars":[1,2,3]
+        },
+        {
+          "id":3,
+          "hotelName":"Hotel Çarshia e Jupave",
+          "description":"Located in Gjakove, 24 km from Visoki Dečani Monastery, Hotel Çarshia e Jupave provides accommodation with a restaurant, free private parking and a bar. Around 33 km from Mirusha Waterfalls, the property is also 39 km away from Sinan Pasha Mosque and offers free WiFi.",
+          "images":[
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/164721973.jpg?k=2f538f2c1c76fe21563df5a3b1dae028d29561ffa7f5054b496923059b4b9475&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/164721960.jpg?k=43c40121846f67388531ca8b3284b080385361d787bfe49cfcecb49906beedc3&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/164721965.jpg?k=464361240f2829dc1a2b859614313d04b6caacd29c45836e8a85ec07e837348d&o=&hp=1"},
+            {"image":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/71043985.jpg?k=d164f94493f1b07cbfb8e7f6030938d12894713c41df73fdd080414550703453&o=&hp=1"}
+
+          ],
+          "facilities":[{"facility":"Tea/coffee maker in all rooms"},{"facility":"Breakfast"},{"facility":"Bar"}],
+          "stars":[1,2,3,4]
+        }
       ]
     }
 
